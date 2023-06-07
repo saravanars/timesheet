@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../recentdev"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay"
+	}
+}
