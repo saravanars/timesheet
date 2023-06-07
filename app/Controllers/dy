@@ -1,0 +1,716 @@
+  public function update()
+    {
+        $timesheetModel = new TimesheetModel();
+        $request = service('request');
+        $session = session();
+        $empid = $session->get('emp_id');
+    
+        $date = $request->getVar('date');
+        $counter = $request->getVar('counter');
+    
+        // Check if there are existing timesheet entries for the employee and date
+        $existingEntries = $timesheetModel->where('emp_id', $empid)->where('date', $date)->findAll();
+    
+        if (!empty($existingEntries)) {
+            // Delete existing timesheet entries for the employee and date
+            $timesheetModel->where('emp_id', $empid)->where('date', $date)->delete();
+        }
+    
+        for ($i = 1; $i <= $counter; $i++) {
+            $projectId = $request->getVar('project_id_' . $i);
+            $module = $request->getVar('module_' . $i);
+            $status = $request->getVar('status_' . $i);
+            $task = $request->getVar('task_' . $i);
+            $hour = $request->getVar('hours_' . $i);
+    
+            // Apply htmlspecialchars to each element in $tasks
+            $task = htmlspecialchars($task);
+    
+            $updatedData = [
+                'date' => $date,
+                'emp_id' => $empid,
+                'project_id' => $projectId,
+                'module' => $module,
+                'status' => $status,
+                'task' => $task,
+                'hours' => $hour,
+                'report_time' => date('Y-m-d H:i:s'),
+            ];
+    
+            // Insert a new timesheet record
+            $timesheetModel->insert($updatedData);
+        }
+    
+        return redirect()->to('mytimesheet');
+    }
+
+    ----------------------
+    $session = session();
+        $empId = $session->get('emp_id');
+        // $today = date('Y-m-d');
+        $timesheetModel = new TimesheetModel();
+        $timesheets = $timesheetModel->getTimesheetsWithProjectNames($empId);
+
+        $pro_date = [];
+        $single_project = [];
+        $i = 0; 
+        $per_date =array();
+        $cur_date ="";
+        foreach ($timesheets as $timesheet) {
+            if ($cur_date == "") {
+                $cur_date = $timesheet['date'];
+                $per_date[$i] = [];
+            }
+            $cur_row_date = $timesheet['date'];
+        
+            if ($cur_date == $cur_row_date) {
+                array_push($per_date[$i], $timesheet);
+            } else {
+                $i++;
+                $cur_date = $timesheet['date'];
+                if(isset($timesheet)){
+                    $per_date[$i] = [];
+                    array_push($per_date[$i], $timesheet);
+                }
+            }
+            
+        }
+        $p=0;
+        if ($per_date !== null) {
+            foreach ($per_date as $timesheets) {
+                $single_project[$p] = [] ;
+                $project_name='';
+                $pro_date='';
+                foreach($timesheets as $timesheet){
+                    $pro_date = $timesheet['date'];
+                    if (! str_contains($project_name, $timesheet['project_name'])) {
+                        $project_name .= $timesheet['project_name'] . ', ';
+                    }
+                }
+                $single_project[$p] = array(
+                    'date' => $pro_date,
+                    'project_name' => $project_name
+
+                );
+                $p++;
+
+            }
+        }
+        echo "<pre>";
+        print_r($single_project);
+     echo "</pre>";
+     die();
+----------------------
+$session = session();
+        $empId = $session->get('emp_id');
+        // $today = date('Y-m-d');
+        $timesheetModel = new TimesheetModel();
+        $timesheets = $timesheetModel->getTimesheetsWithProjectNames($empId);
+
+        $pro_date = [];
+        $single_project = [];
+        $i = 0; 
+        $per_date =array();
+        $cur_date ="";
+        foreach ($timesheets as $timesheet) {
+            if ($cur_date == "") {
+                $cur_date = $timesheet['date'];
+                $per_date[$i] = [];
+            }
+            $cur_row_date = $timesheet['date'];
+     
+            if ($cur_date == $cur_row_date) {
+                array_push($per_date[$i], $timesheet);
+                // print_r($per_date);die;
+            } else {
+                $i++;
+                $cur_date = $timesheet['date'];
+                if(isset($timesheet)){
+                    $per_date[$i] = [];
+                    array_push($per_date[$i], $timesheet);
+                }
+            }
+            
+        }
+        $p=0;
+        if ($per_date !== null) {
+            foreach ($per_date as $timesheets) {
+                $single_project[$p] = [] ;
+                $project_name='';
+                $pro_date='';
+                foreach($timesheets as $timesheet){
+                    $pro_date = $timesheet['date'];
+                    if (! str_contains($project_name, $timesheet['project_name'])) {
+                        $project_name .= $timesheet['project_name'] . ', ';
+                    }
+                }
+                $single_project[$p] = array(
+                    'date' => $pro_date,
+                    'project_name' => $project_name
+
+                );
+                $p++;
+
+            }
+        }
+        echo "<pre>";
+        print_r($single_project);
+     echo "</pre>";
+     die();
+
+     foreach ($single_project as $project) {
+        $date = $project['date'];
+        $projectNames = $project['project_names'];
+    
+        echo "Date: " . $date . "<br>";
+        echo "Project Names: " . implode(', ', $projectNames) . "<br>";
+        echo "<br>";
+    }
+
+
+
+
+
+
+
+
+
+    public function search()
+    {
+        
+        $request = service('request');
+
+        $fromDate = $request->getPost('fromdate');
+        $toDate = $request->getPost('todate');
+        $employee = $request->getPost('Employee');
+        $projectName = $request->getPost('project_name');
+        $action = $request->getPost('action');
+
+        $timesheetModel = new TimesheetModel();
+
+        // Apply filters
+        if ($this->request->getPost('fromdate') && $this->request->getPost('todate')) {
+            $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+            $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+            $timesheetModel->where('date >=', $fromDate)->where('date <=', $toDate);
+         }
+        
+
+
+        if ($projectName) {
+            $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+            $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+            $timesheetModel->where('timesheet_master.project_id', $projectName);
+        }
+
+        if ($employee) {
+            $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+            $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+            $timesheetModel->where('timesheet_master.emp_id', $employee);
+            $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+        }
+
+        $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+
+        $results = $timesheetModel->findAll();
+//  echo "<pre>";  print_r($results);die;
+        $html = view('pdf', ['results' => $results]);
+    //  echo $html; die;
+       
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+
+
+        $dompdf->stream("mypdf.pdf", [
+            "Attachment" => false
+ ]);
+
+ exit();
+       
+        $dompdf->stream('timesheet_report.pdf');
+       
+
+
+    }
+
+
+
+     
+    //     $html = '';
+        // // $html = view('frontend/cart/stripe/invoice_pdf', $data);
+              
+        // // $pdfFilePath = "invoice_" . $invoice_id . ".pdf";
+        // $mpdf = new \Mpdf\Mpdf();
+        // $mpdf->WriteHTML($html);
+        // $this->response->setHeader('Content-Type', 'application/pdf');
+        // $mpdf->Output();
+            // $dompdf->loadHtml($html);
+            // $dompdf->setPaper('A4', 'portrait');
+            // $dompdf->render();
+
+
+    //         $dompdf->stream("mypdf12345.pdf", [
+    //             "Attachment" => false
+    //  ]);
+
+
+            // $dompdf->stream('timesheet_report.pdf');
+
+
+
+        
+
+    // Create an instance of the mPDF object
+
+
+
+
+    // public function search()
+
+    // {
+    //     $request = service('request');
+    //     $fromDate = $request->getPost('fromdate');
+    //     $toDate = $request->getPost('todate');
+    //     $employee = $request->getPost('Employee');
+    //     $projectName = $request->getPost('project_name');
+    //     $action = $request->getPost('action');
+
+
+
+    //     $timesheetModel = new TimesheetModel();
+
+
+
+
+    //     if ($this->request->getPost('fromdate') && $this->request->getPost('todate')) {
+    //         $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+    //         $timesheetModel->where('date >=', $fromDate)->where('date <=', $toDate);
+    //     }
+
+
+    //     if ($this->request->getPost('project_name')) {
+    //         $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+    //         $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+    //         $timesheetModel->where('timesheet_master.project_id', $projectName);
+    //     }
+
+    //     if ($this->request->getPost('Employee')) {
+    //         $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+    //         $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+    //         $timesheetModel->where('timesheet_master.emp_id', $employee);
+    //         $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+    //     }
+    //     $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+
+    //     $results = $timesheetModel->findAll();
+    //     $dompdf = new \Dompdf\Dompdf();
+    //     $html = '<h1>Timesheet Report</h1>';
+    //     $html .= '<table>';
+    //     $html .= '<thead><tr><th>Date</th><th>Project Name</th><th>Modules</th><th>Task</th><th>Hours</th></tr></thead><tbody>';
+    //     foreach ($results as $row) {
+    //         $task = html_entity_decode($row['task']);
+    //         $html .= '<tr><td>' . $row['date'] . '</td><td>' . $row['project_name'] . '</td><td>' . $row['module'] . '</td><td>' . $row['task'] . '</td><td>' . $row['hours'] . '</td></tr>';
+    //     }
+    //     $html .= '</tbody></table>';
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('A4', 'portrait');
+    //     $dompdf->render();
+    //     $dompdf->stream('timesheet_report.pdf', ['Attachment' => 0]);
+    //     $dompdf->stream('timesheet_report.pdf');
+    // }
+
+
+
+    $session = session();
+        $empId = $session->get('emp_id');
+
+        $pro_date = [];
+        $single_project = [];
+        $i = 0;
+        $per_date = array();
+        $cur_date = "";
+
+        foreach ($reportData as $timesheet) {
+            if ($cur_date == "") {
+                $cur_date = $timesheet['date'];
+                $per_date[$i] = [];
+            }
+            $cur_row_date = $timesheet['date'];
+
+            if ($cur_date == $cur_row_date) {
+                array_push($per_date[$i], $timesheet);
+            } else {
+                $i++;
+                $cur_date = $timesheet['date'];
+                if (isset($timesheet)) {
+                    $per_date[$i] = [];
+                    array_push($per_date[$i], $timesheet);
+                }
+            }
+        }
+
+        $p = 0;
+        if ($per_date !== null) {
+            foreach ($per_date as $timesheets) {
+                // print_r($per_date);die;
+                $single_project[$p] = [];
+                $project_name = '';
+                $pro_date = '';
+                $name = "";
+                $team = "";
+                $emp_id = "";
+                foreach ($timesheets as $timesheet) {
+                    $pro_date = $timesheet['date'];
+
+
+                    if (isset($timesheet['emp_id'])) {
+                        $emp_id = $timesheet['emp_id'];
+                    }
+                    if (isset($timesheet['name'])) {
+                        $name = $timesheet['name'];
+                    }
+                    $team = $timesheet['team_name'];
+                    if (!str_contains($project_name, $timesheet['project_name'])) {
+                        $project_name .= $timesheet['project_name'] . ', ';
+                    }
+                }
+                $single_project[$p] = array(
+                    'date' => $pro_date,
+                    'project_name' => $project_name,
+                    'name' => $name,
+                    'team_name' => $team,
+                    'emp_id' => $emp_id
+                );
+                $p++;
+            }
+        }
+        <td>
+    <?php
+    $taskValue = ucfirst($row['task']);
+    $taskValue = str_replace("<p>", "", $taskValue);
+    $taskValue = str_replace("&nbsp; ", " ", $taskValue);
+    $taskValue = trim($taskValue);
+    $taskValue = html_entity_decode( $taskValue);
+    echo $taskValue;
+    ?>
+    <input type="hidden" name="task[]" value="<?php echo strip_tags($row['task']); ?>">
+</td>
+public function download()
+    {
+
+       
+        $date = $this->request->getPost('report_date[]');
+        $employee = $this->request->getPost('name[]');
+        // print_r($_POST);die;
+
+        $project_name = $this->request->getPost('project_name[]');
+        $team_name = $this->request->getPost('team[]');
+
+        $module = $this->request->getPost('module[]');
+   
+        $task = $this->request->getPost('task[]');
+        $tasks = array_map('html_entity_decode', $task);
+        
+        $empid=$this->request->getPost('emp_id[]');
+        $status = $this->request->getPost('status[]');
+        $working_hours = $this->request->getPost('working_hours[]');
+        // print_r($date);exit();
+
+$datas=[];
+        $data = array();
+        if (isset($project_name) && is_array($project_name)) {
+            $data = array();
+            
+            $master = count($project_name);
+
+            for ($i = 0; $i < $master; $i++) {
+                $Project_model = new ProjectlistModel();
+                $timesheetModel = new TimesheetModel();
+                 $project = $Project_model->where('project_name',$project_name[$i])->first();
+        // print_r($project);die;
+        $pro_id  = $project['project_id'];
+        // print_r($pro_id);exit();
+        $data = $timesheetModel->where('emp_id',$empid[$i])->where('project_id',$pro_id)->where('date',$date[$i])->findAll();
+
+        $formData = [
+            'emp_id'=>$empid[$i],
+                    'date' => $date[$i],
+                    'project_name' => $project_name[$i],
+                    'task' =>html_entity_decode($task[$i]),
+                    'module' => $module[$i],
+                    'status' => $status[$i],
+                    'hours' => $working_hours[$i]
+                ];
+                array_push($datas, $formData);
+            }
+        }
+        ob_start();
+        $results['form'] = $datas;
+        $results['name'] = $employee;
+        $results['team_name'] = $team_name;
+        $html = ob_get_clean(); 
+        $html = view('pdf', $results);
+        $dompdf = new \Dompdf\Dompdf();
+        $dompdf->loadHtml(view('pdf'));
+        $dompdf->setPaper('A4', 'landscape');
+        // $filename = date('Y_m_d H_i_s') . '.pdf';
+        // $dompdf->setOutputFilename($filename);
+        // $config['file_name'] = date("Y_m_d H:i:s");
+
+        // $dompdf->render();
+        // $dompdf->stream();
+        $filename = date('Ymd-h_i_s') . '.pdf';
+
+        $dompdf->render();
+
+        // Set the appropriate headers for PDF download
+        header('Content-Type: application/pdf');
+        header('Content-Disposition: attachment; filename="' . $filename . '"');
+
+        echo $dompdf->output();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // public function search()
+    // {
+    //     $request = service('request');
+
+    //     $fromDate = $request->getPost('from-date');
+    //     $toDate = $request->getPost('todate');
+    //     $employee = $request->getPost('Employee');
+    //     $projectName = $request->getPost('project_name');
+
+    //     $timesheetModel = new \App\Models\TimesheetModel();
+    //     $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+    // $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+    // $timesheetModel->where('timesheet_master.date >=', $fromDate);
+    // $timesheetModel->where('timesheet_master.date <=', $toDate);
+    // $timesheetModel->where('timesheet_master.emp_id', $employee);
+    // $timesheetModel->whereIn('project_list.project_id', $projectName);
+    // $timesheetModel->orderBy('timesheet_master.date', 'DESC');
+    //     // Date range
+    //     if (!empty($fromDate) && !empty($toDate)) {
+    //         $timesheetModel->where('timesheet_master.date >=', $fromDate)
+    //             ->where('timesheet_master.date <=', $toDate);
+    //     }
+
+    //     // Employee
+    //     if ($employee != 'All') {
+    //         $timesheetModel->where('timesheet_master.emp_id', $employee);
+    //     }
+
+    //     // Project name
+    //     if (!empty($projectName)) {
+    //         $projectIds = is_array($projectName) ? $projectName : [$projectName]; // Convert to array if not already
+    //         $timesheetModel->whereIn('project_list.project_id', $projectIds);
+    //     }
+
+    //     // Group by employee ID
+    //     $timesheetModel->groupBy('timesheet_master.emp_id');
+
+    //     // Order by date
+    //     $timesheetModel->orderBy('timesheet_master.date', 'DESC');
+
+    //     $results = $timesheetModel->findAll();
+
+    //     // print_r($results);
+    //     // die();
+    //     $dompdf = new Dompdf();
+    //     $html = '<h1>Timesheet Report</h1>';
+    //     $html .= '<table>';
+    //     $html .= '<thead><tr><th>Date</th><th>Project Name</th><th>Modules</th><th>Task</th><th>Hours</th></tr></thead><tbody>';
+    //     foreach ($results as $row) {
+    //         $task = html_entity_decode($row['task']); // 
+
+    //         $html .= '<tr><td>' . $row['date'] . '</td><td>' . $row['project_name'] . '</td><td>' . $row['module'] . '</td><td>' . $row['task'] . '</td><td>' . $row['hours'] . '</td></tr>';
+    //     }
+    //     $html .= '</tbody></table>';
+
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('A4', 'portrait');
+    //     $dompdf->render();
+    //     $dompdf->stream('timesheet_report.pdf', ['Attachment' => 0]);
+
+
+
+    //     $csvData = '';
+    //     $csvData .= 'Date,Project Name,Modules,Task,Hours' . PHP_EOL;
+    //     foreach ($results as $row) {
+    //         $task = strip_tags($row['task'], '<br><strong><em><u>'); // Remove all tags except specified tags
+    //         $task = preg_replace('/[\x00-\x1F\x7F]/u', '', $task); // Remove special characters
+    //         $task = str_replace(' ', '', $task); // Remove spaces in the task column
+    //         $csvData .= $row['date'] . ',' . $row['project_name'] . ',' . $row['module'] . ',' . $task . ',' . $row['hours'] . PHP_EOL;
+    //     }
+    //     header('Content-Type: text/csv');
+    //     header('Content-Disposition: attachment; filename="timesheet_report.csv"');
+    //     echo $csvData;
+    //     exit();
+
+
+
+    //     // Pass the data to a view to display the download links
+    //     return view('/admin_dashboard', $data);
+    //     // Pass the data to a view to display the download links
+
+    // }
+
+
+
+    // public function reports()
+    // {
+    //     $session = session();
+
+    //     ;
+
+    //  // print_r($timesheets);die;
+
+    //       // print_r( $timesheets['row']);die;
+    //      return view('/admin_dashboard',$timesheets);
+
+    // }
+
+
+
+
+
+
+
+    //     public function search()
+    // {
+    //     $request = service('request');
+
+    //     $fromDate = $request->getPost('from-date');
+    //     $toDate = $request->getPost('todate');
+    //     $employee = $request->getPost('Employee');
+    //     $projectName = $request->getPost('project_name');
+
+    //     $timesheetModel = new \App\Models\TimesheetModel();
+    //     $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+    //     $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+    //     $timesheetModel->where('timesheet_master.date >=', $fromDate);
+    //     $timesheetModel->where('timesheet_master.date <=', $toDate);
+    //     $timesheetModel->where('timesheet_master.emp_id', $employee);
+
+    //     // Project name
+    //     if (!empty($projectName)) {
+    //         $projectIds = is_array($projectName) ? $projectName : [$projectName]; // Convert to array if not already
+    //         $timesheetModel->whereIn('project_list.project_id', $projectIds);
+    //     }
+
+
+    //     // date
+    //     $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+
+    //     $results = $timesheetModel->findAll();
+
+    //     $dompdf = new Dompdf();
+    //     $html = '<h1>Timesheet Report</h1>';
+    //     $html .= '<table>';
+    //     $html .= '<thead><tr><th>Date</th><th>Project Name</th><th>Modules</th><th>Task</th><th>Hours</th></tr></thead><tbody>';
+    //     foreach ($results as $row) {
+    //         $task = html_entity_decode($row['task']);
+    //         $html .= '<tr><td>' . $row['date'] . '</td><td>' . $row['project_name'] . '</td><td>' . $row['module'] . '</td><td>' . $row['task'] . '</td><td>' . $row['hours'] . '</td></tr>';
+    //     }
+    //     $html .= '</tbody></table>';
+
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('A4', 'portrait');
+    //     $dompdf->render();
+    //     $dompdf->stream('timesheet_report.pdf', ['Attachment' => 0]);
+
+    //     // CSV generation
+    //     $csvData = 'Date,Project Name,Modules,Task,Hours' . PHP_EOL;
+    //     foreach ($results as $row) {
+    //         $task = strip_tags($row['task'], '<br><strong><em><u>');
+    //         $task = preg_replace('/[\x00-\x1F\x7F]/u', '', $task);
+    //         $task = str_replace(' ', '', $task);
+    //         $csvData .= $row['date'] . ',' . $row['project_name'] . ',' . $row['module'] . ',' . $task . ',' . $row['hours'] . PHP_EOL;
+    //     }
+    //     header('Content-Type: text/csv');
+    //     header('Content-Disposition: attachment; filename="timesheet_report.csv"');
+    //     echo $csvData;
+    //     exit();
+
+
+  // Apply filters
+            // if (!empty($fromDate) && !empty($toDate)) {
+            //     $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+            //     $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+            //     $timesheetModel->where('date >=', $fromDate)->where('date <=', $toDate);
+            // }
+
+
+
+
+    //     // Pass the data to a view to display the download links
+    //     return view('/admin_dashboard', $data);
+    // }
+
+
+        // public function search()
+        // {
+
+        //     $request = service('request');
+
+        //     $fromDate = $request->getPost('fromdate');
+        //     $toDate = $request->getPost('todate');
+        //     $employee = $request->getPost('Employee');
+        //     $projectName = $request->getPost('project_name');
+        //     $action = $request->getPost('action');
+
+        //     $timesheetModel = new TimesheetModel();
+        //     if ($projectName) {
+        //         $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+        //         $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+        //         $timesheetModel->where('timesheet_master.project_id', $projectName);
+        //     }
+        //     if ($employee) {
+        //         $timesheetModel->select('timesheet_master.date, project_list.project_name, timesheet_master.module, timesheet_master.task, timesheet_master.hours');
+        //         $timesheetModel->join('project_list', 'project_list.project_id = timesheet_master.project_id');
+        //         $timesheetModel->where('timesheet_master.emp_id', $employee);
+        //         $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+        //     }
+        //     $timesheetModel->orderBy('timesheet_master.date', 'ASC');
+        //     $results = $timesheetModel->findAll();
+        //     $lastQuery = $timesheetModel->getLastQuery();
+        //     $html = '';
+        //     ob_start(); 
+        //     $html = view('pdf', ['results' => $results]);
+        //     ob_end_clean();
+        //     $pdf = new mPDF();
+        //     $pdf->WriteHTML($html);
+        //     $pdf->Output();
+        //     exit();
+        // }
+          
+        /// old function above
+        // <button class="btn btn-primary table__btn"  id="btn_view" onclick="viewTodayData('<?= $project['date'] ?>', '<?= $project['emp_id'] ?>','<?= $project['id'] ?>')">View</button>
+        <button class="btn btn-primary table__btn" onclick="viewTodayData('<?= $project['date'] ?>')">View</button>
