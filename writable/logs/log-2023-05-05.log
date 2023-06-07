@@ -1,0 +1,333 @@
+CRITICAL - 2023-05-05 04:51:57 --> Unmatched '}'
+in APPPATH\Models\CompanyModel.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\CompanyModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CompanyModel')
+ 3 APPPATH\Controllers\FormController.php(41): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CompanyModel')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 06:44:09 --> Cannot redeclare App\Controllers\FormController::updatepassword()
+in APPPATH\Controllers\FormController.php on line 240.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-05 07:34:30 --> syntax error, unexpected variable "$session", expecting "," or ";"
+in APPPATH\Controllers\FormController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:34:35 --> syntax error, unexpected variable "$session", expecting "," or ";"
+in APPPATH\Controllers\FormController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:34:43 --> syntax error, unexpected variable "$session", expecting "," or ";"
+in APPPATH\Controllers\FormController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:34:59 --> syntax error, unexpected variable "$session", expecting "," or ";"
+in APPPATH\Controllers\FormController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 07:39:08 --> password_hash(): Argument #2 ($algo) must be a valid password hashing algorithm
+in APPPATH\Controllers\FormController.php on line 51.
+ 1 APPPATH\Controllers\FormController.php(51): password_hash(Object(SensitiveParameterValue), '$2y$10$kfV.oE23FHx5Dhj0s65uXu3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 09:20:01 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\FormController.php on line 104.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 10:16:16 --> Invalid file: "changepass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('changepass.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('changepass', [], true)
+ 3 APPPATH\Controllers\FormController.php(71): view('changepass')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 11:36:50 --> Invalid file: "change_password_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('change_password_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('change_password_view', [], true)
+ 3 APPPATH\Controllers\FormController.php(200): view('change_password_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:49:27 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\timesheet\app\Controllers\FormController.php on line 137
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\FormController.php(137): view('changepassword', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:50:07 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\timesheet\app\Controllers\FormController.php on line 137
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\FormController.php(137): view('changepassword', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:51:18 --> Undefined array key "email"
+in APPPATH\Controllers\FormController.php on line 247.
+ 1 APPPATH\Controllers\FormController.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\FormController.php', 247)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:54:33 --> Undefined array key "email"
+in APPPATH\Controllers\FormController.php on line 248.
+ 1 APPPATH\Controllers\FormController.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\FormController.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:54:49 --> Undefined variable $data
+in APPPATH\Controllers\FormController.php on line 270.
+ 1 APPPATH\Controllers\FormController.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\FormController.php', 270)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:55:29 --> Undefined variable $data
+in APPPATH\Controllers\FormController.php on line 270.
+ 1 APPPATH\Controllers\FormController.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\FormController.php', 270)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:55:52 --> Undefined variable $data
+in APPPATH\Controllers\FormController.php on line 270.
+ 1 APPPATH\Controllers\FormController.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\FormController.php', 270)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 12:56:44 --> Undefined variable $data
+in APPPATH\Controllers\FormController.php on line 269.
+ 1 APPPATH\Controllers\FormController.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\FormController.php', 269)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:00:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-05 13:00:14 --> 220 smtp.googlemail.com ESMTP v13-20020a17090a0c8d00b00246b1b4a3ffsm13439486pja.0 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [103.87.106.78]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK v13-20020a17090a0c8d00b00246b1b4a3ffsm13439486pja.0 - gsmtp
+
+to: 555 5.5.2 Syntax error. v13-20020a17090a0c8d00b00246b1b4a3ffsm13439486pja.0 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a17090a0c8d00b00246b1b4a3ffsm13439486pja.0 - gsmtp
+
+quit: 221 2.0.0 closing connection v13-20020a17090a0c8d00b00246b1b4a3ffsm13439486pja.0 - gsmtp
+
+ERROR - 2023-05-05 13:02:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-05 13:02:06 --> 220 smtp.googlemail.com ESMTP x21-20020a17090300d500b001a2104d706fsm1712211plc.225 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [103.87.106.78]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK x21-20020a17090300d500b001a2104d706fsm1712211plc.225 - gsmtp
+
+to: 555 5.5.2 Syntax error. x21-20020a17090300d500b001a2104d706fsm1712211plc.225 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. x21-20020a17090300d500b001a2104d706fsm1712211plc.225 - gsmtp
+
+quit: 221 2.0.0 closing connection x21-20020a17090300d500b001a2104d706fsm1712211plc.225 - gsmtp
+
+CRITICAL - 2023-05-05 13:06:23 --> Undefined variable $email
+in APPPATH\Controllers\FormController.php on line 242.
+ 1 APPPATH\Controllers\FormController.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\FormController.php', 242)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:06:39 --> Value of type null is not callable
+in APPPATH\Controllers\FormController.php on line 248.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:07:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-05 13:07:49 --> 220 smtp.googlemail.com ESMTP i10-20020aa78d8a000000b00625d84a0194sm1626457pfr.107 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [103.87.106.78]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK i10-20020aa78d8a000000b00625d84a0194sm1626457pfr.107 - gsmtp
+
+to: 555 5.5.2 Syntax error. i10-20020aa78d8a000000b00625d84a0194sm1626457pfr.107 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. i10-20020aa78d8a000000b00625d84a0194sm1626457pfr.107 - gsmtp
+
+quit: 221 2.0.0 closing connection i10-20020aa78d8a000000b00625d84a0194sm1626457pfr.107 - gsmtp
+
+CRITICAL - 2023-05-05 13:19:52 --> Undefined variable $request
+in APPPATH\Controllers\FormController.php on line 193.
+ 1 APPPATH\Controllers\FormController.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\FormController.php', 193)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('4f21a99ba8e414a2f78ff05b')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:27:32 --> Undefined variable $request
+in APPPATH\Controllers\FormController.php on line 194.
+ 1 APPPATH\Controllers\FormController.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\FormController.php', 194)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('4f21a99ba8e414a2f78ff05b')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:34:30 --> Undefined array key "email"
+in APPPATH\Controllers\FormController.php on line 252.
+ 1 APPPATH\Controllers\FormController.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\FormController.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:39:40 --> Undefined array key "email"
+in APPPATH\Controllers\FormController.php on line 252.
+ 1 APPPATH\Controllers\FormController.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\FormController.php', 252)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:48:49 --> syntax error, unexpected variable "$result"
+in APPPATH\Controllers\FormController.php on line 247.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:57:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 256.
+ 1 APPPATH\Controllers\FormController.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 256)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:58:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 257.
+ 1 APPPATH\Controllers\FormController.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 257)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 13:59:09 --> Undefined variable $to
+in APPPATH\Controllers\FormController.php on line 261.
+ 1 APPPATH\Controllers\FormController.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $to', 'APPPATH\\Controllers\\FormController.php', 261)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 13:59:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-05 13:59:33 --> 220 smtp.googlemail.com ESMTP f4-20020a170902ce8400b00192aa53a7d5sm1859600plg.8 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [103.87.106.78]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK f4-20020a170902ce8400b00192aa53a7d5sm1859600plg.8 - gsmtp
+
+to: 555 5.5.2 Syntax error. f4-20020a170902ce8400b00192aa53a7d5sm1859600plg.8 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. f4-20020a170902ce8400b00192aa53a7d5sm1859600plg.8 - gsmtp
+
+quit: 221 2.0.0 closing connection f4-20020a170902ce8400b00192aa53a7d5sm1859600plg.8 - gsmtp
+
+CRITICAL - 2023-05-05 16:06:13 --> Call to a member function where() on null
+in APPPATH\Controllers\FormController.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('ec8ec017bec5e9e43214281b')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 16:06:53 --> Call to a member function where() on null
+in APPPATH\Controllers\FormController.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('ec8ec017bec5e9e43214281b')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 16:07:17 --> Call to a member function where() on null
+in APPPATH\Controllers\FormController.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('ec8ec017bec5e9e43214281b')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-05 16:11:03 --> Call to a member function where() on null
+in APPPATH\Controllers\FormController.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('ec8ec017bec5e9e43214281b')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-05 16:14:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-05 16:14:41 --> 220 smtp.googlemail.com ESMTP v13-20020a170903238d00b001a076025715sm1956784plh.117 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [49.204.140.75]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK v13-20020a170903238d00b001a076025715sm1956784plh.117 - gsmtp
+
+to: 555 5.5.2 Syntax error. v13-20020a170903238d00b001a076025715sm1956784plh.117 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. v13-20020a170903238d00b001a076025715sm1956784plh.117 - gsmtp
+
+quit: 221 2.0.0 closing connection v13-20020a170903238d00b001a076025715sm1956784plh.117 - gsmtp
+

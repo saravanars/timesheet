@@ -1,0 +1,936 @@
+CRITICAL - 2023-03-29 06:41:18 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:00 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:01 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:01 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:01 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:02 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:03 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:03 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:44:12 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:46:06 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:48:50 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:49:41 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:54:08 --> Undefined array key "email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:03 --> Undefined array key "email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:14 --> Undefined array key "email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:15 --> Undefined array key "email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:24 --> Undefined array key "id"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:34 --> Undefined array key ""
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:56:44 --> Cannot use [] for reading
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-29 06:56:51 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:57:50 --> Undefined array key "email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 06:59:44 --> syntax error, unexpected identifier "email", expecting ")"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Userdashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Userdashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Userdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Userdashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:00:02 --> Undefined constant "App\Controllers\email"
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:01:50 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 23.
+ 1 APPPATH\Controllers\Userdashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:03:20 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Userdashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Userdashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Userdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Userdashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:08:20 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 23.
+ 1 APPPATH\Controllers\Userdashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:09:56 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 24.
+ 1 APPPATH\Controllers\Userdashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:09:57 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 24.
+ 1 APPPATH\Controllers\Userdashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:10:54 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:11:04 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:11:48 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:11:49 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:11:49 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:12:31 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:13:33 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:13:34 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:14:21 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 APPPATH\Controllers\Userdashboard.php(22): implode(' ', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:15:52 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 24.
+ 1 APPPATH\Controllers\Userdashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:16:14 --> Array to string conversion
+in APPPATH\Controllers\Userdashboard.php on line 24.
+ 1 APPPATH\Controllers\Userdashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Userdashboard.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:05 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:47 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:48 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:48 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:49 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:49 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 07:46:49 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:34:11 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:36:43 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:31 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH\Controllers\Userdashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:32 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH\Controllers\Userdashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:32 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH\Controllers\Userdashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:32 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH\Controllers\Userdashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:55 --> Object of type CodeIgniter\Session\Session is not callable
+in APPPATH\Controllers\Userdashboard.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:05:40 --> Undefined variable $idw
+in APPPATH\Models\Userlog.php on line 14.
+ 1 APPPATH\Models\Userlog.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idw', 'APPPATH\\Models\\Userlog.php', 14)
+ 2 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:06:03 --> Undefined variable $idw
+in APPPATH\Models\Userlog.php on line 14.
+ 1 APPPATH\Models\Userlog.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idw', 'APPPATH\\Models\\Userlog.php', 14)
+ 2 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:06:03 --> Undefined variable $idw
+in APPPATH\Models\Userlog.php on line 14.
+ 1 APPPATH\Models\Userlog.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idw', 'APPPATH\\Models\\Userlog.php', 14)
+ 2 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:14:55 --> Undefined variable $result
+in APPPATH\Models\Userlog.php on line 15.
+ 1 APPPATH\Models\Userlog.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Models\\Userlog.php', 15)
+ 2 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:22:26 --> Call to a member function getResultArray() on array
+in APPPATH\Models\Userlog.php on line 16.
+ 1 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:53:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Userlog.php on line 10.
+ 1 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:53:21 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(10): CodeIgniter\Model->__call('db', [...])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:55:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(11): CodeIgniter\Model->__call('getLogs', [])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:55:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(11): CodeIgniter\Model->__call('getLogs', [])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:55:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(11): CodeIgniter\Model->__call('getLogs', [])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:55:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(11): CodeIgniter\Model->__call('getLogs', [])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 09:55:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\Userlog.php(11): CodeIgniter\Model->__call('getLogs', [])
+ 4 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:12:19 --> Undefined variable $id
+in APPPATH\Models\Userlog.php on line 13.
+ 1 APPPATH\Models\Userlog.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Models\\Userlog.php', 13)
+ 2 APPPATH\Controllers\Userdashboard.php(21): App\Models\Userlog->Userdata('in@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:13:25 --> Undefined variable $print_r
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 APPPATH\Controllers\Userdashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $print_r', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:13:58 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:14:23 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 21.
+ 1 APPPATH\Controllers\Userdashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:16:13 --> Undefined property: App\Controllers\Userdashboard::$db
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 APPPATH\Controllers\Userdashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Userdashboard::$db', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:16:14 --> Undefined property: App\Controllers\Userdashboard::$db
+in APPPATH\Controllers\Userdashboard.php on line 22.
+ 1 APPPATH\Controllers\Userdashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Userdashboard::$db', 'APPPATH\\Controllers\\Userdashboard.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:19:20 --> Undefined variable $Userlog
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Userlog', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:19:30 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:19:31 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:19:32 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:37:03 --> syntax error, unexpected token "public"
+in APPPATH\Models\Userlog.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Userlog.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Userlog')
+ 3 APPPATH\Controllers\Userdashboard.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Userlog')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Userdashboard->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:04:28 --> mysqli_sql_exception: Table 'db.company_registration' doesn't exist in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('m1@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'm1@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(1453): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(745): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#10 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(42): CodeIgniter\Model->insert(Array)
+#11 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(64): App\Models\UserModel->insert_data(Array)
+#12 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#13 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#14 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2023-03-29 11:04:28 --> Table 'db.company_registration' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `company_registration`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('m1@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'm1@gmail.com', [...], [...])
+ 5 SYSTEMPATH\BaseModel.php(1453): CodeIgniter\Validation\Validation->run([...], null, null)
+ 6 SYSTEMPATH\BaseModel.php(745): CodeIgniter\BaseModel->validate([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\UserModel.php(42): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\FormController.php(64): App\Models\UserModel->insert_data([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:06:14 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(64): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-29 11:06:14 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(42): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(64): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:07:42 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(64): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-29 11:07:42 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(42): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(64): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:20:30 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:21:59 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:22:01 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:22:01 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:22:02 --> Undefined variable $id
+in APPPATH\Controllers\Userdashboard.php on line 19.
+ 1 APPPATH\Controllers\Userdashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Userdashboard.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:27:28 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:27:45 --> syntax error, unexpected end of file
+in APPPATH\Views\dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:29:15 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:00 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:01 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:13 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:33 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:30:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:31:47 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:40:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:44:58 --> Undefined variable $ds
+in APPPATH\Views\dashboard.php on line 21.
+ 1 APPPATH\Views\dashboard.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ds', 'APPPATH\\Views\\dashboard.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Userdashboard.php(22): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:49:56 --> view(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\myproject\project\app\Controllers\Userdashboard.php on line 27
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Userdashboard.php(27): view([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:50:14 --> view(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\myproject\project\app\Controllers\Userdashboard.php on line 27
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Userdashboard.php(27): view([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:51:19 --> view(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\myproject\project\app\Controllers\Userdashboard.php on line 27
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\Userdashboard.php(27): view([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:52:00 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(27): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:52:20 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(27): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:52:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(27): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:53:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(27): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 11:53:34 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashboard.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(27): view('dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 13:09:28 --> mysqli_sql_exception: Duplicate entry '9467845662' for key 'registration_number' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(64): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-29 13:09:28 --> Duplicate entry '9467845662' for key 'registration_number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(42): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(64): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 13:09:57 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 80.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\FormController.php(68): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 13:10:30 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 80.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\FormController.php(68): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 13:13:08 --> Call to undefined function set_value()
+in APPPATH\Views\login.php on line 80.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\FormController.php(68): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

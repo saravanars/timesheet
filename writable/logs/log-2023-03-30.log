@@ -1,0 +1,153 @@
+CRITICAL - 2023-03-30 06:42:26 --> syntax error, unexpected token "return", expecting "," or ";"
+in APPPATH\Controllers\Userdashboard.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Userdashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Userdashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Userdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Userdashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 06:42:29 --> syntax error, unexpected token "return", expecting "," or ";"
+in APPPATH\Controllers\Userdashboard.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Userdashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Userdashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Userdashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Userdashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 07:09:51 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\Userlogview.php on line 45.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Userlogview', [], true)
+ 4 APPPATH\Controllers\Userdashboard.php(25): view('Userlogview', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:17:33 --> Array callback must have exactly two elements
+in APPPATH\Controllers\LoginController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:21:50 --> Array callback must have exactly two elements
+in APPPATH\Controllers\LoginController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:24:06 --> Array callback must have exactly two elements
+in APPPATH\Controllers\LoginController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:26:24 --> Array callback must have exactly two elements
+in APPPATH\Controllers\LoginController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:27:00 --> Array callback must have exactly two elements
+in APPPATH\Controllers\LoginController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:27:24 --> Undefined array key "name"
+in APPPATH\Views\Common\header.php on line 13.
+ 1 APPPATH\Views\Common\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\Common\\header.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:29:24 --> Undefined array key "name"
+in APPPATH\Views\Common\header.php on line 13.
+ 1 APPPATH\Views\Common\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\Common\\header.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:30:41 --> Undefined array key "owner_director_details"
+in APPPATH\Views\Common\header.php on line 13.
+ 1 APPPATH\Views\Common\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "owner_director_details"', 'APPPATH\\Views\\Common\\header.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:43:32 --> Array to string conversion
+in APPPATH\Views\Common\header.php on line 19.
+ 1 APPPATH\Views\Common\header.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Common\\header.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:44:06 --> Undefined array key "my_string"
+in APPPATH\Views\Common\header.php on line 19.
+ 1 APPPATH\Views\Common\header.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "my_string"', 'APPPATH\\Views\\Common\\header.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:44:46 --> Undefined array key "userName"
+in APPPATH\Views\Common\header.php on line 13.
+ 1 APPPATH\Views\Common\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userName"', 'APPPATH\\Views\\Common\\header.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 09:44:47 --> Undefined array key "userName"
+in APPPATH\Views\Common\header.php on line 13.
+ 1 APPPATH\Views\Common\header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userName"', 'APPPATH\\Views\\Common\\header.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\UserController.php(11): view('common/header')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 10:07:23 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\Userdashboard.php(24): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 10:07:31 --> Invalid file: "/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/header.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/header', [], true)
+ 3 APPPATH\Controllers\Userdashboard.php(24): view('/header')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Userdashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userdashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,639 @@
+CRITICAL - 2023-05-03 05:00:05 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:03:02 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:03:03 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:03:03 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:03:06 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:05:22 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:05:25 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 82.
+ 1 APPPATH\Controllers\FormController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:36:43 --> Undefined variable $email
+in APPPATH\Controllers\FormController.php on line 92.
+ 1 APPPATH\Controllers\FormController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\FormController.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:37:36 --> Undefined variable $email
+in APPPATH\Controllers\FormController.php on line 93.
+ 1 APPPATH\Controllers\FormController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Controllers\\FormController.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:42:16 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 92.
+ 1 APPPATH\Controllers\FormController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:45:02 --> Object of class App\Controllers\FormController could not be converted to string
+in APPPATH\Controllers\FormController.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 05:46:11 --> Undefined variable $CompanyModel
+in APPPATH\Controllers\FormController.php on line 95.
+ 1 APPPATH\Controllers\FormController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CompanyModel', 'APPPATH\\Controllers\\FormController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:02:47 --> Unmatched '}'
+in APPPATH\Controllers\FormController.php on line 150.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:08:06 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 21.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:18:01 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 21.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:20:09 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 24.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:20:50 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 20.
+ 1 APPPATH\Controllers\FormController.php(95): App\Models\CompanyModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:21:24 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 25.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:24:35 --> Call to a member function post() on null
+in APPPATH\Models\CompanyModel.php on line 26.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:25:26 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Models\CompanyModel.php on line 30.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:26:12 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Models\CompanyModel.php on line 30.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:28:28 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Models\CompanyModel.php on line 34.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:28:44 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Models\CompanyModel.php on line 32.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:29:34 --> Too few arguments to function App\Models\CompanyModel::email_exists(), 0 passed in C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php on line 96 and exactly 1 expected
+in APPPATH\Models\CompanyModel.php on line 13.
+ 1 APPPATH\Controllers\FormController.php(96): App\Models\CompanyModel->email_exists()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:31:19 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 103.
+ 1 APPPATH\Controllers\FormController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:34:17 --> Call to a member function helper() on null
+in APPPATH\Controllers\FormController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\FormController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:34:35 --> Call to a member function helper() on null
+in APPPATH\Controllers\FormController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\FormController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:34:44 --> Call to a member function library() on null
+in APPPATH\Controllers\FormController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\FormController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:36:28 --> Call to a member function config() on null
+in APPPATH\Controllers\FormController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\FormController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:39:07 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 108.
+ 1 APPPATH\Controllers\FormController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 06:58:13 --> Call to undefined method CodeIgniter\Email\Email::from()
+in APPPATH\Controllers\FormController.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:05:11 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Controllers\FormController.php on line 178.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:05:31 --> Undefined variable $link
+in APPPATH\Controllers\FormController.php on line 110.
+ 1 APPPATH\Controllers\FormController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Controllers\\FormController.php', 110)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:06:08 --> Call to undefined function App\Controllers\random_string()
+in APPPATH\Controllers\FormController.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:22:28 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 108.
+ 1 APPPATH\Controllers\FormController.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:26:00 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\FormController.php(110): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:26:27 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\FormController.php(110): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:29:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\FormController.php(110): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 07:37:28 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\FormController.php(115): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 08:15:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = 'otp'
+WHERE `id` = '1'' at line 1 in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `employe...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employe...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employe...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `employe...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\app\Models\CompanyModel.php(24): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(115): App\Models\CompanyModel->updateotp('1', Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-03 08:15:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 = 'otp'
+WHERE `id` = '1'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `employee` SET 0 = :0:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\CompanyModel.php(24): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\FormController.php(115): App\Models\CompanyModel->updateotp('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:25:05 --> Call to a member function getVar() on null
+in APPPATH\Models\CompanyModel.php on line 19.
+ 1 APPPATH\Controllers\FormController.php(115): App\Models\CompanyModel->updateotp('1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:25:14 --> Undefined property: App\Controllers\FormController::$load
+in APPPATH\Controllers\FormController.php on line 119.
+ 1 APPPATH\Controllers\FormController.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormController::$load', 'APPPATH\\Controllers\\FormController.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:37:22 --> Undefined variable $session
+in APPPATH\Controllers\FormController.php on line 128.
+ 1 APPPATH\Controllers\FormController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\FormController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:39:05 --> Undefined variable $session
+in APPPATH\Controllers\FormController.php on line 128.
+ 1 APPPATH\Controllers\FormController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\FormController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:49:04 --> Undefined variable $session
+in APPPATH\Controllers\FormController.php on line 128.
+ 1 APPPATH\Controllers\FormController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\FormController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:51:55 --> Undefined variable $session
+in APPPATH\Controllers\FormController.php on line 128.
+ 1 APPPATH\Controllers\FormController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\FormController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:53:15 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\FormController.php(134): view('signup', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:59:26 --> Unclosed '{' on line 13
+in APPPATH\Controllers\FormController.php on line 269.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 08:59:30 --> Unclosed '{' on line 13
+in APPPATH\Controllers\FormController.php on line 269.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 09:38:58 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\FormController.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:21:49 --> Value of type bool is not callable
+in APPPATH\Controllers\FormController.php on line 112.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-03 10:55:05 --> mysqli_sql_exception: Unknown column 'link' in 'where clause' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(136): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('f8b999242972443...')
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-03 10:55:05 --> Unknown column 'link' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `link` = :link:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\FormController.php(136): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('f8b9992429724436de4997f70b8aa3433e0a6b5f6dd6cb4b4fc46f494d3d99c2')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:17:05 --> Undefined array key "link"
+in APPPATH\Controllers\FormController.php on line 140.
+ 1 APPPATH\Controllers\FormController.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Controllers\\FormController.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('10ec9daeed3802dbec856453')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:17:06 --> Undefined array key "link"
+in APPPATH\Controllers\FormController.php on line 140.
+ 1 APPPATH\Controllers\FormController.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "link"', 'APPPATH\\Controllers\\FormController.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('10ec9daeed3802dbec856453')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:33:16 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 0 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\FormController.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 12:31:28 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 0 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\FormController.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 13:40:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 183.
+ 1 APPPATH\Controllers\FormController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:38:13 --> view(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php on line 126
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\FormController.php(126): view([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 20:42:14 --> Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('C:\\xampp\\htdocs\\myproject\\project', [], true)
+ 3 APPPATH\Controllers\FormController.php(126): view('C:\\xampp\\htdocs\\myproject\\project', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->recoverpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:19:17 --> Object of class App\Models\CompanyModel could not be converted to string
+in APPPATH\Models\CompanyModel.php on line 32.
+ 1 APPPATH\Controllers\FormController.php(178): App\Models\CompanyModel->updatepassword(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:21:28 --> Undefined variable $data
+in APPPATH\Models\CompanyModel.php on line 27.
+ 1 APPPATH\Models\CompanyModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Models\\CompanyModel.php', 27)
+ 2 APPPATH\Controllers\FormController.php(178): App\Models\CompanyModel->updatepassword(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:46:18 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('be85b7ff2de9daa7b2589225')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:46:21 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('be85b7ff2de9daa7b2589225')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:46:25 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('be85b7ff2de9daa7b2589225')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:47:06 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('bd9b0365cb14e912f4efe152')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 15:56:07 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 135.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('bd9b0365cb14e912f4efe152')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:07:45 --> Undefined variable $userId
+in APPPATH\Views\resetpassword.php on line 33.
+ 1 APPPATH\Views\resetpassword.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Views\\resetpassword.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resetpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('resetpassword', [], true)
+ 5 APPPATH\Controllers\FormController.php(149): view('resetpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('0c5d6280186c6b36832e1d46')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:11:54 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('0c5d6280186c6b36832e1d46')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:12:03 --> Undefined variable $userId
+in APPPATH\Views\resetpassword.php on line 33.
+ 1 APPPATH\Views\resetpassword.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Views\\resetpassword.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resetpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('resetpassword', [], true)
+ 5 APPPATH\Controllers\FormController.php(150): view('resetpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('0c5d6280186c6b36832e1d46')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:12:59 --> Undefined variable $userId
+in APPPATH\Views\resetpassword.php on line 33.
+ 1 APPPATH\Views\resetpassword.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Views\\resetpassword.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resetpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('resetpassword', [], true)
+ 5 APPPATH\Controllers\FormController.php(152): view('resetpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('0c5d6280186c6b36832e1d46')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:14:48 --> Undefined variable $userId
+in APPPATH\Controllers\FormController.php on line 152.
+ 1 APPPATH\Controllers\FormController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Controllers\\FormController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:15:07 --> Too few arguments to function App\Controllers\FormController::resetpassword(), 1 passed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\FormController.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:17:40 --> Undefined variable $userId
+in APPPATH\Controllers\FormController.php on line 152.
+ 1 APPPATH\Controllers\FormController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Controllers\\FormController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:20:04 --> Undefined variable $data
+in APPPATH\Controllers\FormController.php on line 134.
+ 1 APPPATH\Controllers\FormController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\FormController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:25:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 143.
+ 1 APPPATH\Controllers\FormController.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:26:22 --> Undefined variable $userId
+in APPPATH\Views\resetpassword.php on line 33.
+ 1 APPPATH\Views\resetpassword.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Views\\resetpassword.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resetpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('resetpassword', [], true)
+ 5 APPPATH\Controllers\FormController.php(161): view('resetpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:26:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 144.
+ 1 APPPATH\Controllers\FormController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:29:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\FormController.php on line 147.
+ 1 APPPATH\Controllers\FormController.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\FormController.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('39884225db01494329efae26')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:45:01 --> Undefined variable $userId
+in APPPATH\Views\resetpassword.php on line 33.
+ 1 APPPATH\Views\resetpassword.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Views\\resetpassword.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resetpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('resetpassword', [], true)
+ 5 APPPATH\Controllers\FormController.php(149): view('resetpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('22a9ed08d1377c71d9ebb10d')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:46:24 --> Call to undefined function App\Controllers\get()
+in APPPATH\Controllers\FormController.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:46:55 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:49:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 16:51:32 --> Undefined array key "id"
+in APPPATH\Controllers\FormController.php on line 184.
+ 1 APPPATH\Controllers\FormController.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\FormController.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,399 @@
+ERROR - 2023-05-12 02:10:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id` = :id:' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update('1', Array)
+#5 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(62): App\Models\TimesheetModel->action(Array, '1')
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-12 02:10:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 = :1:
+WHERE `id` = :id:' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `timesheet_master` SET 1 = :1:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update('1', [...])
+ 3 APPPATH\Controllers\Timesheet.php(62): App\Models\TimesheetModel->action([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 02:50:26 --> syntax error, unexpected variable "$query", expecting "function" or "const"
+in APPPATH\Models\TimesheetModel.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\TimesheetModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TimesheetModel')
+ 3 APPPATH\Controllers\Timesheet.php(20): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TimesheetModel')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Timesheet->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 02:50:58 --> mysqli_sql_exception: Column 'project_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(62): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 02:50:58 --> Column 'project_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 05:50:35 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 46.
+ 1 APPPATH\Controllers\Timesheet.php(46): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 05:51:17 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 46.
+ 1 APPPATH\Controllers\Timesheet.php(46): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 05:52:00 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 46.
+ 1 APPPATH\Controllers\Timesheet.php(46): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 05:52:31 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 46.
+ 1 APPPATH\Controllers\Timesheet.php(46): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 06:30:29 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Timesheet.php on line 49.
+ 1 APPPATH\Controllers\Timesheet.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Timesheet.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 06:57:18 --> Call to a member function get() on array
+in APPPATH\Controllers\Timesheet.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 07:25:17 --> Call to a member function get() on array
+in APPPATH\Controllers\Timesheet.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 07:27:12 --> mysqli_sql_exception: Column 'project_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 07:27:12 --> Column 'project_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`, `report_time`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(72): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 07:29:42 --> Unclosed '{' on line 13
+in APPPATH\Controllers\Timesheet.php on line 114.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 07:30:45 --> Unclosed '{' on line 13
+in APPPATH\Controllers\Timesheet.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 08:34:51 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet.php on line 83.
+ 1 APPPATH\Views\timesheet.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 08:34:53 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet.php on line 83.
+ 1 APPPATH\Views\timesheet.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 08:34:55 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet.php on line 83.
+ 1 APPPATH\Views\timesheet.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet.php', 83)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 08:46:33 --> Undefined array key 103
+in APPPATH\Controllers\Timesheet.php on line 60.
+ 1 APPPATH\Controllers\Timesheet.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 103', 'APPPATH\\Controllers\\Timesheet.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 09:17:44 --> Call to undefined function App\Controllers\timezt()
+in APPPATH\Controllers\Timesheet.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 09:19:37 --> Undefined variable $datatime
+in APPPATH\Controllers\Timesheet.php on line 65.
+ 1 APPPATH\Controllers\Timesheet.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datatime', 'APPPATH\\Controllers\\Timesheet.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 14:51:41 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\Timesheet.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 14:52:06 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\Timesheet.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 09:23:23 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 14:54:21 --> Call to a member function format() on bool
+in APPPATH\Controllers\Timesheet.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 14:55:57 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 14:57:00 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\Timesheet.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 15:06:31 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 15:06:31 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`, `report_time`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(68): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 15:11:33 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('emp_id', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->whereIn('emp_id', '1')
+ 3 APPPATH\Controllers\Timesheet.php(39): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 15:12:48 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 15:12:48 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`, `report_time`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(68): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 15:16:14 --> Undefined variable $_post
+in APPPATH\Controllers\Timesheet.php on line 36.
+ 1 APPPATH\Controllers\Timesheet.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_post', 'APPPATH\\Controllers\\Timesheet.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 09:47:15 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Timesheet.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 15:18:07 --> Undefined array key "testname"
+in APPPATH\Controllers\Timesheet.php on line 36.
+ 1 APPPATH\Controllers\Timesheet.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "testname"', 'APPPATH\\Controllers\\Timesheet.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 15:18:38 --> Undefined array key "project_id[]_"
+in APPPATH\Controllers\Timesheet.php on line 36.
+ 1 APPPATH\Controllers\Timesheet.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id[]_"', 'APPPATH\\Controllers\\Timesheet.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 15:19:33 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 15:19:33 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`, `report_time`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(69): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-12 15:20:31 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-12 15:20:31 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`emp_id`, `name`, `email`, `project_id`, `module`, `status`, `task`, `report_time`) VALUES (:emp_id:, :name:, :email:, :project_id:, :module:, :status:, :task:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(69): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 15:21:00 --> Undefined array key "url"
+in APPPATH\Controllers\Timesheet.php on line 56.
+ 1 APPPATH\Controllers\Timesheet.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'APPPATH\\Controllers\\Timesheet.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-12 10:34:58 --> Unclosed '{' on line 13
+in APPPATH\Controllers\Timesheet.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

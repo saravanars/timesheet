@@ -1,0 +1,416 @@
+CRITICAL - 2023-05-06 04:53:28 --> syntax error, unexpected identifier "connection"
+in APPPATH\Controllers\FormController.php on line 298.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 05:00:13 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 277.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 05:01:13 --> Undefined variable $_post
+in APPPATH\Controllers\FormController.php on line 245.
+ 1 APPPATH\Controllers\FormController.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $_post', 'APPPATH\\Controllers\\FormController.php', 245)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 05:28:52 --> syntax error, unexpected token "=", expecting variable or "{" or "$"
+in APPPATH\Controllers\FormController.php on line 295.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 06:12:35 --> Undefined variable $5af811c42fabf6a5783a883f338ba1
+in APPPATH\Controllers\FormController.php on line 54.
+ 1 APPPATH\Controllers\FormController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $5af811c42fabf6a5783a883f338ba1', 'APPPATH\\Controllers\\FormController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 06:32:48 --> syntax error, unexpected token "=", expecting variable or "{" or "$"
+in APPPATH\Controllers\FormController.php on line 294.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:11:24 --> Undefined array key "otp"
+in APPPATH\Controllers\FormController.php on line 291.
+ 1 APPPATH\Controllers\FormController.php(291): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "otp"', 'APPPATH\\Controllers\\FormController.php', 291)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:14:08 --> Undefined array key "otp"
+in APPPATH\Controllers\FormController.php on line 296.
+ 1 APPPATH\Controllers\FormController.php(296): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "otp"', 'APPPATH\\Controllers\\FormController.php', 296)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:14:41 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 296.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:53:11 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(279): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:56:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(281): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:57:18 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(281): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 07:57:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(281): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:00:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(299): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:03:14 --> Undefined variable $otp
+in APPPATH\Controllers\FormController.php on line 271.
+ 1 APPPATH\Controllers\FormController.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $otp', 'APPPATH\\Controllers\\FormController.php', 271)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:04:00 --> Undefined variable $otp
+in APPPATH\Controllers\FormController.php on line 271.
+ 1 APPPATH\Controllers\FormController.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $otp', 'APPPATH\\Controllers\\FormController.php', 271)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:06:40 --> Unclosed '{' on line 13
+in APPPATH\Controllers\FormController.php on line 339.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:07:14 --> Object of class CodeIgniter\Email\Email could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('SELECT *
+FROM `employee`
+WHERE `otp` = :otp.1:
+AND `email` = :email:
+ LIMIT 1', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT *
+FROM `employee`
+WHERE `otp` = :otp.1:
+AND `email` = :email:
+ LIMIT 1', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `otp` = :otp.1:
+AND `email` = :email:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\FormController.php(298): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:39:13 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(293): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:42:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(294): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:43:21 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(294): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:44:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(295): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:45:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(295): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:47:29 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(296): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:50:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(296): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:55:45 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(302): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 08:59:37 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\FormController.php(293): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:00:05 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\FormController.php(293): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:00:40 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\FormController.php(293): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:10:11 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 287.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:19:06 --> Invalid file: "/user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user', [], true)
+ 3 APPPATH\Controllers\FormController.php(130): view('/user', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:30:23 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:32:08 --> syntax error, unexpected single-quoted string ");", expecting "]"
+in APPPATH\Controllers\FormController.php on line 135.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:32:47 --> Unclosed '[' does not match ')'
+in APPPATH\Controllers\FormController.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\FormController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 09:35:51 --> Cannot access offset of type string on string
+in APPPATH\Controllers\FormController.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->change()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:18:19 --> Invalid file: "/common/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/common/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/common/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:19:14 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:19:16 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:19:17 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:19:17 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:35:25 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:35:26 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:35:26 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 12:35:27 --> Invalid file: "/user/layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/user/layout/header.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('/user/layout/header', [], true)
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 4 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:33:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(292): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-06 13:35:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\FormController.php(292): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->updatepassword()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

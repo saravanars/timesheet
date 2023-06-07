@@ -1,0 +1,393 @@
+CRITICAL - 2023-03-31 06:22:03 --> syntax error, unexpected token ";", expecting "{"
+in APPPATH\Controllers\MailController.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MailController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MailController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MailController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\MailController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-31 08:59:51 --> Unclosed '{' on line 6
+in APPPATH\Controllers\MailController.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MailController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MailController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MailController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\MailController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-31 09:00:08 --> Unclosed '{' on line 12
+in APPPATH\Controllers\MailController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MailController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MailController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MailController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\MailController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-31 09:00:09 --> Unclosed '{' on line 12
+in APPPATH\Controllers\MailController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\MailController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MailController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MailController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\MailController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-31 09:08:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\SendMail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\SendMail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendMail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 09:08:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:08:36 --> 
+ERROR - 2023-03-31 09:11:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 09:11:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:11:01 --> 
+ERROR - 2023-03-31 09:12:06 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 09:12:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:12:06 --> 
+ERROR - 2023-03-31 09:24:32 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('ssl://smtp.offi...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 09:24:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:24:32 --> 
+ERROR - 2023-03-31 09:24:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A00010B:SSL routines::wrong version number in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('ssl://smtp.offi...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 09:24:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:24:54 --> 
+ERROR - 2023-03-31 09:42:43 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1735)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('admin@gmail.com', '=?UTF-8?Q?jjgvj...', 'ggjgjjgjggjjgjg...', 'Date: Fri, 31 M...', '-f saravanrs71@...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-03-31 09:42:43 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:42:43 --> 
+ERROR - 2023-03-31 09:43:37 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1735)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('admin@gmail.com', '=?UTF-8?Q?jjgvj...', 'ggjgjjgjggjjgjg...', 'Date: Fri, 31 M...', '-f saravanrs71@...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-03-31 09:43:37 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 09:43:37 --> 
+ERROR - 2023-03-31 10:14:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:14:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:14:37 --> 
+ERROR - 2023-03-31 10:15:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:15:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:15:25 --> 
+ERROR - 2023-03-31 10:17:28 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:17:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:17:28 --> 
+ERROR - 2023-03-31 10:18:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:18:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:18:15 --> 
+ERROR - 2023-03-31 10:19:33 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:19:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:19:33 --> 
+ERROR - 2023-03-31 10:26:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:26:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:26:12 --> 
+ERROR - 2023-03-31 10:34:32 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:34:32 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:35:09 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1735)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('saravanars71@gm...', '=?UTF-8?Q?akdsk...', 'This is a multi...', 'Date: Fri, 31 M...', '-f johndoe@gmai...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-03-31 10:35:09 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:35:09 --> 
+ERROR - 2023-03-31 10:35:37 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:35:37 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:36:28 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1735)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('saravanars71@gm...', '=?UTF-8?Q?akdsk...', '9943718449\r\n', 'Date: Fri, 31 M...', '-f johndoe@gmai...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-03-31 10:36:28 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:36:28 --> 
+ERROR - 2023-03-31 10:36:51 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:36:51 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:37:59 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:37:59 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:38:30 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:38:30 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:43:12 --> Email: Unable to send email using Sendmail. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:43:12 --> Exit status code: 1
+Unable to open a socket to Sendmail. Please check settings.
+ERROR - 2023-03-31 10:43:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\myproject\project\app\Controllers\Mail.php(24): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mail->sendMail()
+#7 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mail))
+#8 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-03-31 10:43:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-03-31 10:43:51 --> 
+ERROR - 2023-03-31 11:21:43 --> mysqli_sql_exception: Duplicate entry '9467845662' for key 'registration_number' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(73): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-31 11:21:43 --> Duplicate entry '9467845662' for key 'registration_number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(42): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(73): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-31 11:25:23 --> mysqli_sql_exception: Duplicate entry '1234567890' for key 'registration_number' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(73): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-31 11:25:23 --> Duplicate entry '1234567890' for key 'registration_number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `type`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :type:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(43): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(73): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-31 11:25:38 --> mysqli_sql_exception: Duplicate entry '123456789' for key 'registration_number' in C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\myproject\project\app\Models\UserModel.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\myproject\project\app\Controllers\FormController.php(73): App\Models\UserModel->insert_data(Array)
+#9 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+#10 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#11 C:\xampp\htdocs\myproject\project\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\myproject\project\index.php(76): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-31 11:25:38 --> Duplicate entry '123456789' for key 'registration_number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `company` (`company_name`, `business_type`, `registration_number`, `registered_address`, `contact_details`, `owner_director_details`, `date_of_incorporation`, `industry_or_sector`, `website_link`, `email`, `type`, `password`, `created_at`) VALUES (:company_name:, :business_type:, :registration_number:, :registered_address:, :contact_details:, :owner_director_details:, :date_of_incorporation:, :industry_or_sector:, :website_link:, :email:, :type:, :password:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserModel.php(43): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FormController.php(73): App\Models\UserModel->insert_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->submitRegistration()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-31 12:58:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\LoginController.php on line 87.
+ 1 APPPATH\Controllers\LoginController.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\LoginController.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LoginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

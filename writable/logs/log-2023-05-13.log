@@ -1,0 +1,371 @@
+CRITICAL - 2023-05-13 10:33:08 --> Undefined variable $projects_name
+in APPPATH\Views\user_dashboard.php on line 248.
+ 1 APPPATH\Views\user_dashboard.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projects_name', 'APPPATH\\Views\\user_dashboard.php', 248)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 5 APPPATH\Controllers\EmpController.php(18): view('/user_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:07:14 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\timesheet.php on line 53.
+ 1 APPPATH\Views\timesheet.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\timesheet.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(31): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:07:59 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\timesheet.php on line 53.
+ 1 APPPATH\Views\timesheet.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\timesheet.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(31): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:08:00 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\timesheet.php on line 53.
+ 1 APPPATH\Views\timesheet.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\timesheet.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(31): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:08:17 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\timesheet.php on line 52.
+ 1 APPPATH\Views\timesheet.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\timesheet.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(31): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:10:18 --> Call to undefined method App\Controllers\Timesheet::include()
+in APPPATH\Controllers\Timesheet.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:11:06 --> Call to undefined method App\Controllers\Timesheet::include()
+in APPPATH\Controllers\Timesheet.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:11:54 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\timesheet.php on line 52.
+ 1 APPPATH\Views\timesheet.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\timesheet.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(32): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:14:15 --> Undefined variable $navbar
+in APPPATH\Views\Common\user\layout\navbar.php on line 97.
+ 1 APPPATH\Views\Common\user\layout\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\Common\\user\\layout\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\user\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/user/layout/navbar', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('common/user/layout/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:15:00 --> Undefined variable $navbar
+in APPPATH\Views\Common\user\layout\navbar.php on line 97.
+ 1 APPPATH\Views\Common\user\layout\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\Common\\user\\layout\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\user\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/user/layout/navbar', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('common/user/layout/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:15:01 --> Undefined variable $navbar
+in APPPATH\Views\Common\user\layout\navbar.php on line 97.
+ 1 APPPATH\Views\Common\user\layout\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\Common\\user\\layout\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\user\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/user/layout/navbar', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('common/user/layout/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:15:02 --> Undefined variable $navbar
+in APPPATH\Views\Common\user\layout\navbar.php on line 97.
+ 1 APPPATH\Views\Common\user\layout\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\Common\\user\\layout\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\user\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/user/layout/navbar', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('common/user/layout/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:15:02 --> Undefined variable $navbar
+in APPPATH\Views\Common\user\layout\navbar.php on line 97.
+ 1 APPPATH\Views\Common\user\layout\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\Common\\user\\layout\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Common\\user\\layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('common/user/layout/navbar', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(30): view('common/user/layout/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 18:51:13 --> Cannot use [] for reading
+in APPPATH\Controllers\Timesheet.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 13:37:51 --> Undefined variable $data
+in APPPATH\Controllers\Timesheet.php on line 110.
+ 1 APPPATH\Controllers\Timesheet.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Timesheet.php', 110)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Timesheet.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 13:38:07 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Timesheet.php on line 103.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 13:38:15 --> Undefined variable $data
+in APPPATH\Controllers\Timesheet.php on line 109.
+ 1 APPPATH\Controllers\Timesheet.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Timesheet.php', 109)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Timesheet.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 6 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 7 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:13:25 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:13:25 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet`.*, `projectlist`.`project_name`
+FROM `timesheet_master`
+JOIN `projectlist` ON `projectlist`.`id` = `timesheet`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 13:58:39 --> syntax error, unexpected token "use", expecting "," or ";"
+in APPPATH\Models\TimesheetModel.php on line 4.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\TimesheetModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TimesheetModel')
+ 3 APPPATH\Controllers\Timesheet.php(22): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TimesheetModel')
+ 4 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Timesheet->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:29:00 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:29:00 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet`.*, `projectlist`.`project_name`
+FROM `timesheet_master`
+JOIN `projectlist` ON `projectlist`.`id` = `timesheet`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:29:14 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:29:14 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet`.*, `projectlist`.`project_name`
+FROM `timesheet_master`
+JOIN `projectlist` ON `project_list`.`id` = `timesheet`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:29:25 --> mysqli_sql_exception: Unknown table 'company.timesheet' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:29:25 --> Unknown table 'company.timesheet'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet`.*, `projectlist`.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`.`id` = `timesheet`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:29:50 --> mysqli_sql_exception: Unknown column 'projectlist.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:29:50 --> Unknown column 'projectlist.project_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.*, `projectlist`.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`.`id` = `timesheet_master`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 19:30:46 --> mysqli_sql_exception: Unknown column 'project_list.id' in 'on clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-13 19:30:46 --> Unknown column 'project_list.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.*, `project_list`.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`.`id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(93): App\Models\TimesheetModel->getTimesheetsWithProjectNames('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 19:47:45 --> Undefined array key "date"
+in APPPATH\Controllers\Timesheet.php on line 102.
+ 1 APPPATH\Controllers\Timesheet.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Controllers\\Timesheet.php', 102)
+ 2 [internal function]: App\Controllers\Timesheet->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\Timesheet.php(101): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 19:52:46 --> Undefined array key "date"
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 [internal function]: App\Controllers\Timesheet->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\Timesheet.php(104): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->fetchdata()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

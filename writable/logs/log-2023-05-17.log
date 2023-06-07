@@ -1,0 +1,2008 @@
+ERROR - 2023-05-17 10:01:57 --> mysqli_sql_exception: Column 'emp_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(80): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-17 10:01:57 --> Column 'emp_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`date`, `emp_id`, `project_id`, `module`, `status`, `task`, `hours`, `report_time`) VALUES (:date:, :emp_id:, :project_id:, :module:, :status:, :task:, :hours:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(80): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 10:02:11 --> mysqli_sql_exception: Column 'emp_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(80): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-17 10:02:11 --> Column 'emp_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`date`, `emp_id`, `project_id`, `module`, `status`, `task`, `hours`, `report_time`) VALUES (:date:, :emp_id:, :project_id:, :module:, :status:, :task:, :hours:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(80): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:13:12 --> Undefined variable $projectNames
+in APPPATH\Views\emptimesheet.php on line 51.
+ 1 APPPATH\Views\emptimesheet.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projectNames', 'APPPATH\\Views\\emptimesheet.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(124): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:32:42 --> Call to undefined function route()
+in APPPATH\Views\emptimesheet.php on line 52.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:35:38 --> Cannot access offset of type string on string
+in APPPATH\Views\emptimesheet.php on line 49.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(121): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:37:37 --> Call to undefined function route()
+in APPPATH\Views\emptimesheet.php on line 53.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(121): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:43:54 --> Undefined array key "timesheets"
+in APPPATH\Views\emptimesheet.php on line 45.
+ 1 APPPATH\Views\emptimesheet.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "timesheets"', 'APPPATH\\Views\\emptimesheet.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:48:48 --> Cannot access offset of type string on string
+in APPPATH\Views\emptimesheet.php on line 74.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(121): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:53:41 --> Undefined array key "timesheets"
+in APPPATH\Views\emptimesheet.php on line 44.
+ 1 APPPATH\Views\emptimesheet.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "timesheets"', 'APPPATH\\Views\\emptimesheet.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:22:35 --> Call to undefined method App\Models\TimesheetModel::getDistinctProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Timesheet.php(101): CodeIgniter\Model->__call('getDistinctProjectNames', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:23:25 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 45.
+ 1 APPPATH\Views\emptimesheet.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(106): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:26:15 --> Undefined variable $timesheetModel
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheetModel', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(106): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:26:16 --> Undefined variable $timesheetModel
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheetModel', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(106): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:26:16 --> Undefined variable $timesheetModel
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheetModel', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(106): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:26:17 --> Undefined variable $timesheetModel
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheetModel', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(106): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:02 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:03 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:04 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:04 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:05 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:27:13 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:29:16 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:29:16 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:29:17 --> Undefined variable $empId
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empId', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(107): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:30:13 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(108): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:30:14 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(108): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:30:14 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(108): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:31:38 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(108): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:31:39 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(108): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:32:15 --> Call to undefined method App\Models\TimesheetModel::getTimesheetsWithProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Model->__call('getTimesheetsWithProjectNames', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:32:34 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:32:55 --> Call to undefined method App\Models\TimesheetModel::getTimesheetsWithProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Model->__call('getTimesheetsWithProjectNames', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:33:07 --> Call to undefined method App\Models\TimesheetModel::getTimesheetsWithProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Model->__call('getTimesheetsWithProjectNames', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:33:07 --> Call to undefined method App\Models\TimesheetModel::getTimesheetsWithProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Model->__call('getTimesheetsWithProjectNames', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:33:08 --> Call to undefined method App\Models\TimesheetModel::getTimesheetsWithProjectNames
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Model->__call('getTimesheetsWithProjectNames', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:34:06 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:36:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:36:34 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:36:35 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:36:35 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:37:11 --> Undefined variable $projectName
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projectName', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(109): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:40:35 --> Undefined variable $Projectnames
+in APPPATH\Controllers\Timesheet.php on line 108.
+ 1 APPPATH\Controllers\Timesheet.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Projectnames', 'APPPATH\\Controllers\\Timesheet.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:41:44 --> Attempt to read property "project_name" on null
+in APPPATH\Models\TimesheetModel.php on line 23.
+ 1 APPPATH\Models\TimesheetModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "project_name" on null', 'APPPATH\\Models\\TimesheetModel.php', 23)
+ 2 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:41:45 --> Attempt to read property "project_name" on null
+in APPPATH\Models\TimesheetModel.php on line 23.
+ 1 APPPATH\Models\TimesheetModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "project_name" on null', 'APPPATH\\Models\\TimesheetModel.php', 23)
+ 2 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:41:45 --> Attempt to read property "project_name" on null
+in APPPATH\Models\TimesheetModel.php on line 23.
+ 1 APPPATH\Models\TimesheetModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "project_name" on null', 'APPPATH\\Models\\TimesheetModel.php', 23)
+ 2 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:41:45 --> Attempt to read property "project_name" on null
+in APPPATH\Models\TimesheetModel.php on line 23.
+ 1 APPPATH\Models\TimesheetModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "project_name" on null', 'APPPATH\\Models\\TimesheetModel.php', 23)
+ 2 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 12:42:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`...' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 12:42:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `project_list`.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+AND DATE(timesheet_master.report_time) = :DATE(timesheet_master.report_time):
+GROUP BY `project_list`.`project_name`', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\TimesheetModel.php(21): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 12:42:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`...' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(21): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 12:42:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `project_list`.`project_name`
+FROM `timesheet_master`
+JOIN `project_list` ON `project_list`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+AND DATE(timesheet_master.report_time) = :DATE(timesheet_master.report_time):
+GROUP BY `project_list`.`project_name`', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\TimesheetModel.php(21): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Timesheet.php(101): App\Models\TimesheetModel->getDistinctProjectNames('1', '2023-05-17')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:43:21 --> Undefined variable $Projectnames
+in APPPATH\Controllers\Timesheet.php on line 108.
+ 1 APPPATH\Controllers\Timesheet.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Projectnames', 'APPPATH\\Controllers\\Timesheet.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:43:39 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:43:41 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:45:23 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:45:23 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:45:24 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:45:36 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\TimesheetModel given
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:46:15 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(111): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:46:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:48:25 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:52:07 --> Undefined array key "project_name"
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:52:56 --> Undefined array key "date"
+in APPPATH\Views\emptimesheet.php on line 51.
+ 1 APPPATH\Views\emptimesheet.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\emptimesheet.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:53:36 --> Undefined array key "report_time"
+in APPPATH\Views\emptimesheet.php on line 52.
+ 1 APPPATH\Views\emptimesheet.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_time"', 'APPPATH\\Views\\emptimesheet.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:54:02 --> Undefined array key "status"
+in APPPATH\Views\emptimesheet.php on line 58.
+ 1 APPPATH\Views\emptimesheet.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\emptimesheet.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 12:54:18 --> Undefined array key "id"
+in APPPATH\Views\emptimesheet.php on line 63.
+ 1 APPPATH\Views\emptimesheet.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\emptimesheet.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(115): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 13:01:33 --> Undefined array key "project_name"
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 13:03:40 --> Undefined array key "project_name"
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 13:06:34 --> Undefined array key "project_name"
+in APPPATH\Controllers\Timesheet.php on line 105.
+ 1 APPPATH\Controllers\Timesheet.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'APPPATH\\Controllers\\Timesheet.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 13:54:20 --> Undefined variable $groupedTimesheets
+in APPPATH\Controllers\Timesheet.php on line 124.
+ 1 APPPATH\Controllers\Timesheet.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Controllers\\Timesheet.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:04:22 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 48.
+ 1 APPPATH\Views\emptimesheet.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(128): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 08:34:54 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Timesheet.php on line 127.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:06:54 --> Undefined variable $data
+in APPPATH\Controllers\Timesheet.php on line 126.
+ 1 APPPATH\Controllers\Timesheet.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Timesheet.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:07:06 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 48.
+ 1 APPPATH\Views\emptimesheet.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(129): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:11:51 --> Undefined variable $data
+in APPPATH\Controllers\Timesheet.php on line 128.
+ 1 APPPATH\Controllers\Timesheet.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Timesheet.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:12:25 --> Undefined variable $data
+in APPPATH\Controllers\Timesheet.php on line 128.
+ 1 APPPATH\Controllers\Timesheet.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Timesheet.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:12:37 --> Undefined variable $navbar
+in APPPATH\Views\emptimesheet.php on line 32.
+ 1 APPPATH\Views\emptimesheet.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\emptimesheet.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(128): view('emptimesheet')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:12:48 --> Undefined variable $navbar
+in APPPATH\Views\emptimesheet.php on line 32.
+ 1 APPPATH\Views\emptimesheet.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\emptimesheet.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(128): view('emptimesheet')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:12:57 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 48.
+ 1 APPPATH\Views\emptimesheet.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(128): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:16:04 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 48.
+ 1 APPPATH\Views\emptimesheet.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(134): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:30:59 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 48.
+ 1 APPPATH\Views\emptimesheet.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(122): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:41:42 --> Undefined variable $groupedTimesheets
+in APPPATH\Views\emptimesheet.php on line 46.
+ 1 APPPATH\Views\emptimesheet.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $groupedTimesheets', 'APPPATH\\Views\\emptimesheet.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(118): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:50:51 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\emptimesheet.php on line 34.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:51:15 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\emptimesheet.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:51:48 --> Undefined variable $index
+in APPPATH\Views\emptimesheet.php on line 34.
+ 1 APPPATH\Views\emptimesheet.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $index', 'APPPATH\\Views\\emptimesheet.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:52:04 --> Undefined variable $rowCount
+in APPPATH\Views\emptimesheet.php on line 36.
+ 1 APPPATH\Views\emptimesheet.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rowCount', 'APPPATH\\Views\\emptimesheet.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:58:12 --> syntax error, unexpected end of file
+in APPPATH\Views\emptimesheet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:58:28 --> syntax error, unexpected end of file
+in APPPATH\Views\emptimesheet.php on line 45.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:59:24 --> Undefined variable $today
+in APPPATH\Views\emptimesheet.php on line 40.
+ 1 APPPATH\Views\emptimesheet.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH\\Views\\emptimesheet.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:04:39 --> Undefined variable $projectName
+in APPPATH\Views\emptimesheet.php on line 41.
+ 1 APPPATH\Views\emptimesheet.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projectName', 'APPPATH\\Views\\emptimesheet.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:09:31 --> Undefined variable $taskId
+in APPPATH\Views\emptimesheet.php on line 43.
+ 1 APPPATH\Views\emptimesheet.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $taskId', 'APPPATH\\Views\\emptimesheet.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(119): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 09:56:42 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Timesheet.php on line 230.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 09:56:43 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Timesheet.php on line 230.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:57:29 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:58:24 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:58:28 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 15:59:56 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:01:57 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:10:05 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:24:28 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:10 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:13 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:14 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:16 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:19 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 11:00:25 --> syntax error, unexpected variable "$timesheetModel"
+in APPPATH\Controllers\Timesheet.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:30:40 --> Too few arguments to function App\Controllers\Timesheet::edit(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:31:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 63.
+ 1 APPPATH\Views\timesheet_edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(172): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:33:23 --> Undefined variable $date
+in APPPATH\Views\timesheet_edit.php on line 63.
+ 1 APPPATH\Views\timesheet_edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date', 'APPPATH\\Views\\timesheet_edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(172): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:33:50 --> Undefined variable $date
+in APPPATH\Views\timesheet_edit.php on line 63.
+ 1 APPPATH\Views\timesheet_edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date', 'APPPATH\\Views\\timesheet_edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(173): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:33:54 --> Undefined variable $date
+in APPPATH\Views\timesheet_edit.php on line 63.
+ 1 APPPATH\Views\timesheet_edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date', 'APPPATH\\Views\\timesheet_edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(173): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:36:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 92.
+ 1 APPPATH\Views\timesheet_edit.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:42:15 --> Undefined variable $form
+in APPPATH\Views\timesheet_edit.php on line 92.
+ 1 APPPATH\Views\timesheet_edit.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $form', 'APPPATH\\Views\\timesheet_edit.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:42:38 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 92.
+ 1 APPPATH\Views\timesheet_edit.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:45:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 93.
+ 1 APPPATH\Views\timesheet_edit.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:47:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 94.
+ 1 APPPATH\Views\timesheet_edit.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:48:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 94.
+ 1 APPPATH\Views\timesheet_edit.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(185): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:48:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 94.
+ 1 APPPATH\Views\timesheet_edit.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(185): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:48:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 94.
+ 1 APPPATH\Views\timesheet_edit.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(185): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:49:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(185): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:50:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 105.
+ 1 APPPATH\Views\timesheet_edit.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:50:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 105.
+ 1 APPPATH\Views\timesheet_edit.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:51:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 109.
+ 1 APPPATH\Views\timesheet_edit.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:52:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 121.
+ 1 APPPATH\Views\timesheet_edit.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 121)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:53:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\timesheet_edit.php on line 130.
+ 1 APPPATH\Views\timesheet_edit.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\timesheet_edit.php', 130)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(174): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:57:05 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 16:57:15 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:19:42 --> Too few arguments to function App\Controllers\Timesheet::edit(), 1 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Timesheet.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:21:20 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:21:22 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:21:22 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:21:49 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:22:43 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:26:07 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php on line 164
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Timesheet.php(164): CodeIgniter\BaseModel->findAll('2023-05-17')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:31:09 --> Undefined variable $timesheet
+in APPPATH\Controllers\Timesheet.php on line 167.
+ 1 APPPATH\Controllers\Timesheet.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Controllers\\Timesheet.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:32:40 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:33:11 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:34:48 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:34:50 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:34:50 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:34:51 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(180): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 17:44:54 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 17:44:54 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+LEFT JOIN `projectlist` ON `timesheet`.`project_id` = `projectlist`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:
+AND `timesheet`.`date` = :timesheet.date:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 17:45:34 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 17:45:34 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+LEFT JOIN `projectlist` ON `timesheet`.`project_id` = `projectlist`.`project_id`
+WHERE `timesheet`.`emp_id` = :timesheet.emp_id:
+AND `timesheet`.`date` = :timesheet.date:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 17:46:28 --> mysqli_sql_exception: Table 'company.projectlist' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 17:46:28 --> Table 'company.projectlist' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+LEFT JOIN `projectlist` ON `timesheet_master`.`project_id` = `projectlist`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+AND `timesheet_master`.`date` = :timesheet_master.date:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Timesheet.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:46:51 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:36 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:38 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:39 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:39 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:39 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:40 --> Undefined variable $timesheet
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:47:52 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(178): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:49:02 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(182): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:49:28 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(182): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:50:17 --> Undefined array key "module"
+in APPPATH\Views\timesheet_edit.php on line 99.
+ 1 APPPATH\Views\timesheet_edit.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "module"', 'APPPATH\\Views\\timesheet_edit.php', 99)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(182): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:51:19 --> Undefined array key "status"
+in APPPATH\Views\timesheet_edit.php on line 116.
+ 1 APPPATH\Views\timesheet_edit.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\timesheet_edit.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(182): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 17:53:22 --> Undefined array key "project_id"
+in APPPATH\Views\timesheet_edit.php on line 96.
+ 1 APPPATH\Views\timesheet_edit.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_id"', 'APPPATH\\Views\\timesheet_edit.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(182): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 18:08:14 --> Undefined variable $empid
+in APPPATH\Views\timesheet_edit.php on line 62.
+ 1 APPPATH\Views\timesheet_edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empid', 'APPPATH\\Views\\timesheet_edit.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(177): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 18:09:22 --> Undefined variable $empid
+in APPPATH\Views\timesheet_edit.php on line 63.
+ 1 APPPATH\Views\timesheet_edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empid', 'APPPATH\\Views\\timesheet_edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(177): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 13:26:11 --> syntax error, unexpected variable "$projectId"
+in APPPATH\Controllers\Timesheet.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:16:24 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\timesheet_edit.php on line 126.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 19:28:40 --> mysqli_sql_exception: Column 'project_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(226): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-17 19:28:40 --> Column 'project_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`date`, `emp_id`, `project_id`, `module`, `status`, `task`, `hours`, `report_time`) VALUES (:date:, :emp_id:, :project_id:, :module:, :status:, :task:, :hours:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(226): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 19:30:15 --> mysqli_sql_exception: Column 'project_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(227): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-17 19:30:15 --> Column 'project_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`date`, `emp_id`, `project_id`, `module`, `status`, `task`, `hours`, `report_time`) VALUES (:date:, :emp_id:, :project_id:, :module:, :status:, :task:, :hours:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(227): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:36:56 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet_edit.php on line 92.
+ 1 APPPATH\Views\timesheet_edit.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet_edit.php', 92)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:38:50 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\timesheet_edit.php on line 134.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:42:01 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:42:04 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:42:14 --> Attempt to read property "id" on array
+in APPPATH\Views\timesheet_edit.php on line 91.
+ 1 APPPATH\Views\timesheet_edit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Views\\timesheet_edit.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(167): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-05-17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 19:47:48 --> Undefined variable $i
+in APPPATH\Controllers\Timesheet.php on line 180.
+ 1 APPPATH\Controllers\Timesheet.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH\\Controllers\\Timesheet.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 20:11:18 --> mysqli_sql_exception: Unknown column 'timesheet_id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 20:11:18 --> Unknown column 'timesheet_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+WHERE `timesheet_id` IS NULL
+AND `project_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 20:11:37 --> mysqli_sql_exception: Unknown column 'timesheet_id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 20:11:37 --> Unknown column 'timesheet_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+WHERE `timesheet_id` IS NULL
+AND `project_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:43:41 --> Unclosed '{' on line 174 does not match ')'
+in APPPATH\Controllers\Timesheet.php on line 179.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:43:42 --> Unclosed '{' on line 174 does not match ')'
+in APPPATH\Controllers\Timesheet.php on line 179.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 14:43:51 --> Unclosed '{' on line 174 does not match ')'
+in APPPATH\Controllers\Timesheet.php on line 179.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 20:20:21 --> mysqli_sql_exception: Unknown column 'timesheet_id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-17 20:20:21 --> Unknown column 'timesheet_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+WHERE `timesheet_id` IS NULL
+AND `project_id` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Timesheet.php(186): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 22:47:42 --> mysqli_sql_exception: Column 'project_id' cannot be null in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(267): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-17 22:47:42 --> Column 'project_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `timesheet_master` (`date`, `emp_id`, `project_id`, `module`, `status`, `task`, `hours`, `report_time`) VALUES (:date:, :emp_id:, :project_id:, :module:, :status:, :task:, :hours:, :report_time:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Timesheet.php(267): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 19:38:42 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'company' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'company' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-17 19:38:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'company'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-17 19:38:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'company' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'company' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(76): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-17 19:38:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'company'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\FormController.php(38): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()

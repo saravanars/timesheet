@@ -1,0 +1,164 @@
+CRITICAL - 2023-05-11 07:32:34 --> Unclosed '{' on line 12
+in APPPATH\Controllers\Timesheet.php on line 49.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('/timesheet')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('/timesheet')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('/timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:21:48 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(57): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:50:41 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(66): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:52:08 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:56:28 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:59:50 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:00:19 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:00:28 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:39:15 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 52.
+ 1 APPPATH\Controllers\Timesheet.php(52): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:39:22 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 52.
+ 1 APPPATH\Controllers\Timesheet.php(52): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:40:14 --> htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Timesheet.php on line 52.
+ 1 APPPATH\Controllers\Timesheet.php(52): htmlspecialchars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:43:43 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:43:47 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:44:02 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 11:22:34 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 11:26:22 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 11:27:00 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 11:27:02 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 11:37:26 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2521.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2455): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\TimesheetModel.php(17): CodeIgniter\Database\BaseBuilder->update(null, [...])
+ 3 APPPATH\Controllers\Timesheet.php(67): App\Models\TimesheetModel->action([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->timesheet()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(76): CodeIgniter\CodeIgniter->run()
