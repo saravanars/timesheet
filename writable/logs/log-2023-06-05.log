@@ -1,0 +1,339 @@
+CRITICAL - 2023-06-05 10:47:55 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:48:37 --> Undefined array key 2
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:48:54 --> Undefined array key 2
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:49:25 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:51:33 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 393.
+ 1 APPPATH\Controllers\Timesheet.php(393): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 393)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:53:45 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 393.
+ 1 APPPATH\Controllers\Timesheet.php(393): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 393)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:55:21 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 393.
+ 1 APPPATH\Controllers\Timesheet.php(393): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 393)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:58:13 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 395.
+ 1 APPPATH\Controllers\Timesheet.php(395): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 395)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:58:55 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 395.
+ 1 APPPATH\Controllers\Timesheet.php(395): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 395)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 10:59:41 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 349.
+ 1 APPPATH\Controllers\Timesheet.php(349): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 349)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 11:02:11 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 350.
+ 1 APPPATH\Controllers\Timesheet.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 350)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 11:02:28 --> Undefined array key 1
+in APPPATH\Controllers\Timesheet.php on line 350.
+ 1 APPPATH\Controllers\Timesheet.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Timesheet.php', 350)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 11:17:51 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 350.
+ 1 APPPATH\Controllers\Timesheet.php(350): count('2')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 11:39:03 --> Undefined array key 4
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 11:41:21 --> Undefined array key 4
+in APPPATH\Controllers\Timesheet.php on line 392.
+ 1 APPPATH\Controllers\Timesheet.php(392): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Timesheet.php', 392)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 07:13:13 --> Unclosed '{' on line 387 does not match ')'
+in APPPATH\Controllers\Timesheet.php on line 400.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 12:53:52 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Timesheet.php(403): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 12:55:10 --> Call to a member function where() on bool
+in APPPATH\Controllers\Timesheet.php on line 403.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 14:10:41 --> Too few arguments to function App\Controllers\Timesheet::delete_row(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->delete_row()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 14:13:28 --> Too few arguments to function App\Controllers\Timesheet::delete_row(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 296.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->delete_row()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 14:20:57 --> Too few arguments to function App\Controllers\Timesheet::delete_row(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 296.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->delete_row()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 14:21:24 --> Too few arguments to function App\Controllers\Timesheet::delete_row(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Timesheet.php on line 296.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->delete_row()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 18:37:47 --> Undefined array key 2
+in APPPATH\Controllers\Timesheet.php on line 300.
+ 1 APPPATH\Controllers\Timesheet.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Controllers\\Timesheet.php', 300)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:36:25 --> Undefined variable $navbar
+in APPPATH\Views\emptimesheet.php on line 118.
+ 1 APPPATH\Views\emptimesheet.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\emptimesheet.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(201): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:37:40 --> Undefined variable $navbar
+in APPPATH\Views\timesheet_edit.php on line 81.
+ 1 APPPATH\Views\timesheet_edit.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet_edit.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(234): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->edit('2023-6-5')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:54:27 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Timesheet.php on line 288.
+ 1 APPPATH\Controllers\Timesheet.php(288): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:55:33 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 288.
+ 1 APPPATH\Controllers\Timesheet.php(288): count('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:56:26 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 288.
+ 1 APPPATH\Controllers\Timesheet.php(288): count('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:57:09 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 288.
+ 1 APPPATH\Controllers\Timesheet.php(288): count('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 19:57:27 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 288.
+ 1 APPPATH\Controllers\Timesheet.php(288): count('1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 20:20:40 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 287.
+ 1 APPPATH\Controllers\Timesheet.php(287): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 20:21:07 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 287.
+ 1 APPPATH\Controllers\Timesheet.php(287): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 20:22:21 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 287.
+ 1 APPPATH\Controllers\Timesheet.php(287): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 20:33:09 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 287.
+ 1 APPPATH\Controllers\Timesheet.php(287): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:30:25 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 287.
+ 1 APPPATH\Controllers\Timesheet.php(287): count('C:\\xampp\\htdocs\\timesheet')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:44:01 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Timesheet.php on line 386.
+ 1 APPPATH\Controllers\Timesheet.php(386): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:44:26 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Timesheet.php on line 386.
+ 1 APPPATH\Controllers\Timesheet.php(386): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:45:16 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Timesheet.php on line 386.
+ 1 APPPATH\Controllers\Timesheet.php(386): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:50:02 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Timesheet.php on line 385.
+ 1 APPPATH\Controllers\Timesheet.php(385): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:54:37 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 381.
+ 1 APPPATH\Controllers\Timesheet.php(381): count('C:\\xampp\\htdocs\\timesheet')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:55:51 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 381.
+ 1 APPPATH\Controllers\Timesheet.php(381): count('C:\\xampp\\htdocs\\timesheet')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 22:19:30 --> Undefined variable $navbar
+in APPPATH\Views\timesheet.php on line 91.
+ 1 APPPATH\Views\timesheet.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(41): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 22:20:27 --> Undefined variable $navbar
+in APPPATH\Views\timesheet.php on line 91.
+ 1 APPPATH\Views\timesheet.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(41): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 22:42:11 --> Undefined variable $navbar
+in APPPATH\Views\timesheet.php on line 91.
+ 1 APPPATH\Views\timesheet.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(41): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 22:48:38 --> Undefined variable $navbar
+in APPPATH\Views\timesheet.php on line 91.
+ 1 APPPATH\Views\timesheet.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(41): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

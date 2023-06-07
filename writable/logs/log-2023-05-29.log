@@ -1,0 +1,790 @@
+CRITICAL - 2023-05-29 04:50:00 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 187.
+ 1 APPPATH\Controllers\AdminController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 04:59:23 --> mysqli_sql_exception: Unknown column 'tt3.team_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(316): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-29 04:59:23 --> Unknown column 'tt3.team_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`date`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp4`.`name`, `tt3`.`team_name`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC, `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(316): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 05:23:08 --> Cannot use object of type App\Models\TimesheetModel as array
+in APPPATH\Controllers\AdminController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 05:56:11 --> Undefined array key "status"
+in APPPATH\Views\pdf.php on line 97.
+ 1 APPPATH\Views\pdf.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\pdf.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(214): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '0', '101')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:24:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 250.
+ 1 APPPATH\Controllers\AdminController.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:25:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 250.
+ 1 APPPATH\Controllers\AdminController.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:25:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 250.
+ 1 APPPATH\Controllers\AdminController.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:26:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 250.
+ 1 APPPATH\Controllers\AdminController.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:57:21 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 202.
+ 1 APPPATH\Controllers\AdminController.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 202)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:58:00 --> explode(): Argument #2 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 240.
+ 1 APPPATH\Controllers\AdminController.php(240): explode('</p>', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 06:58:37 --> explode(): Argument #2 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 240.
+ 1 APPPATH\Controllers\AdminController.php(240): explode('</p>', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:02:52 --> Array to string conversion
+in APPPATH\Controllers\AdminController.php on line 201.
+ 1 APPPATH\Controllers\AdminController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminController.php', 201)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:22:11 --> Call to undefined method CodeIgniter\View\View::strip_tags_content()
+in APPPATH\Views\pdf.php on line 104.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(215): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:22:52 --> Cannot redeclare strip_tags_content() (previously declared in C:\xampp\htdocs\timesheet\app\Views\pdf.php:103)
+in APPPATH\Views\pdf.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-29 07:23:47 --> Cannot redeclare strip_tags_content() (previously declared in C:\xampp\htdocs\timesheet\app\Views\pdf.php:103)
+in APPPATH\Views\pdf.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-29 07:28:46 --> explode(): Argument #2 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): explode('</p>', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:29:24 --> explode(): Argument #2 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 240.
+ 1 APPPATH\Controllers\AdminController.php(240): explode('</p>', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:43:27 --> strip_tags(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 238.
+ 1 APPPATH\Controllers\AdminController.php(238): strip_tags([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:47:30 --> Call to undefined function strip_tags_content()
+in APPPATH\Views\pdf.php on line 103.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(265): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 07:49:36 --> Cannot redeclare strip_tags_content() (previously declared in C:\xampp\htdocs\timesheet\app\Views\pdf.php:99)
+in APPPATH\Views\pdf.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-29 07:50:29 --> Cannot redeclare strip_tags_content() (previously declared in C:\xampp\htdocs\timesheet\app\Views\pdf.php:99)
+in APPPATH\Views\pdf.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-29 08:37:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 373.
+ 1 APPPATH\Controllers\AdminController.php(373): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 373)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:44:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 378.
+ 1 APPPATH\Controllers\AdminController.php(378): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 378)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:45:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 378.
+ 1 APPPATH\Controllers\AdminController.php(378): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 378)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:45:28 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\AdminController.php on line 393.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:46:36 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\AdminController.php on line 394.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:47:02 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\AdminController.php on line 395.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:53:40 --> ucfirst(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 360.
+ 1 APPPATH\Controllers\AdminController.php(360): ucfirst([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:55:40 --> ucfirst(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 360.
+ 1 APPPATH\Controllers\AdminController.php(360): ucfirst([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 08:55:53 --> ucfirst(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 360.
+ 1 APPPATH\Controllers\AdminController.php(360): ucfirst([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 09:02:55 --> Undefined variable $taskValue
+in APPPATH\Views\csv.php on line 146.
+ 1 APPPATH\Views\csv.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $taskValue', 'APPPATH\\Views\\csv.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\csv.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('csv', [], true)
+ 5 APPPATH\Controllers\AdminController.php(345): view('csv', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-05-01', '2023-05-31', '0', '103')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 09:20:25 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 206.
+ 1 APPPATH\Controllers\AdminController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-12', '2023-05-31', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 09:37:35 --> Undefined variable $csvData
+in APPPATH\Controllers\AdminController.php on line 407.
+ 1 APPPATH\Controllers\AdminController.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $csvData', 'APPPATH\\Controllers\\AdminController.php', 407)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 09:41:25 --> Array to string conversion
+in APPPATH\Controllers\AdminController.php on line 395.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminController.php', 395)
+ 2 APPPATH\Controllers\AdminController.php(395): fputcsv(resource (stream), [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:01:53 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 206.
+ 1 APPPATH\Controllers\AdminController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:35:15 --> Undefined variable $status
+in APPPATH\Controllers\AdminController.php on line 382.
+ 1 APPPATH\Controllers\AdminController.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'APPPATH\\Controllers\\AdminController.php', 382)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:35:54 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:36:41 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:36:43 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:37:27 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:37:28 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:37:56 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 366.
+ 1 APPPATH\Controllers\AdminController.php(366): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:37:57 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 366.
+ 1 APPPATH\Controllers\AdminController.php(366): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:10 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 366.
+ 1 APPPATH\Controllers\AdminController.php(366): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:43 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:38:46 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:40:30 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 365.
+ 1 APPPATH\Controllers\AdminController.php(365): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 10:48:11 --> strip_tags(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 358.
+ 1 APPPATH\Controllers\AdminController.php(358): strip_tags([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:06:12 --> htmlspecialchars(): Argument #2 ($flags) must be of type int, array given
+in APPPATH\Views\pdf.php on line 101.
+ 1 APPPATH\Views\pdf.php(101): htmlspecialchars('&lt;p&gt;gffggfg&lt;/p&gt;', [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(218): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '102')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:08:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 255.
+ 1 APPPATH\Controllers\AdminController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:09:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 255.
+ 1 APPPATH\Controllers\AdminController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:11:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 255.
+ 1 APPPATH\Controllers\AdminController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:12:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 255.
+ 1 APPPATH\Controllers\AdminController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 255.
+ 1 APPPATH\Controllers\AdminController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:26:22 --> Undefined array key "enclosureType"
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "enclosureType"', 'APPPATH\\Controllers\\AdminController.php', 241)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:28:06 --> htmlspecialchars_decode(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): htmlspecialchars_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:35:17 --> Cannot use [] for reading
+in APPPATH\Controllers\AdminController.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:47:00 --> explode(): Argument #2 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 243.
+ 1 APPPATH\Controllers\AdminController.php(243): explode('</p>', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:49:11 --> html_entity_decode(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): html_entity_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:51:18 --> Undefined variable $tasks
+in APPPATH\Controllers\AdminController.php on line 257.
+ 1 APPPATH\Controllers\AdminController.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tasks', 'APPPATH\\Controllers\\AdminController.php', 257)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:57:31 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminController.php on line 261.
+ 1 APPPATH\Controllers\AdminController.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminController.php', 261)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 11:59:01 --> Undefined array key "emp_id"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(218): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '102')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:00:14 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(278): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:01:04 --> Undefined array key "emp_id"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(270): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:07:48 --> array_map(): Argument #2 ($array) must be of type array, null given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): array_map('html_entity_decode', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:08:00 --> array_map(): Argument #2 ($array) must be of type array, null given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): array_map('html_entity_decode', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:09:36 --> array_map(): Argument #2 ($array) must be of type array, null given
+in APPPATH\Controllers\AdminController.php on line 241.
+ 1 APPPATH\Controllers\AdminController.php(241): array_map('html_entity_decode', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:17:49 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(278): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:19:25 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 206.
+ 1 APPPATH\Controllers\AdminController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:20:04 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(278): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:22:12 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:23:30 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:25:25 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:27:20 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:27:38 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:28:22 --> Cannot access offset of type string on string
+in APPPATH\Views\pdf.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 4 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:29:23 --> Undefined array key "emp_id"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:29:29 --> Undefined array key "emp_id"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(279): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:38:31 --> Attempt to read property "task" on array
+in APPPATH\Controllers\AdminController.php on line 264.
+ 1 APPPATH\Controllers\AdminController.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task" on array', 'APPPATH\\Controllers\\AdminController.php', 264)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:49:13 --> Undefined array key "emp_id"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(269): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 12:54:28 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\AdminController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-29 13:05:33 --> syntax error, unexpected token "=", expecting end of file
+in APPPATH\Views\pdf.php on line 54.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 3 APPPATH\Controllers\AdminController.php(282): view('pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:05:42 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(282): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:05:45 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(282): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:06:54 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(282): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:07:44 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(282): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:08:39 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(283): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:08:50 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(283): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:09:21 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(283): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 13:59:57 --> Undefined variable $modifiedTask
+in APPPATH\Controllers\AdminController.php on line 399.
+ 1 APPPATH\Controllers\AdminController.php(399): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modifiedTask', 'APPPATH\\Controllers\\AdminController.php', 399)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 14:08:13 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\AdminController.php on line 421.
+ 1 APPPATH\Controllers\AdminController.php(421): implode(',', '344')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-29 14:09:08 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\AdminController.php on line 422.
+ 1 APPPATH\Controllers\AdminController.php(422): implode(',', '344')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-29 14:18:53 --> mysqli_sql_exception: Table 'company.project' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(213): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '106')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-29 14:18:53 --> Table 'company.project' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`date`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`date`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`
+FROM `timesheet_master`
+JOIN `project` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `date` >= :date:
+AND `date` <= :date.1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:
+AND `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(213): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('2023-05-01', '2023-05-31', '1', '106')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

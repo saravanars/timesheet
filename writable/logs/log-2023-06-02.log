@@ -1,0 +1,1041 @@
+CRITICAL - 2023-06-02 10:23:33 --> Undefined variable $startDate
+in APPPATH\Views\admin_dashboard.php on line 135.
+ 1 APPPATH\Views\admin_dashboard.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'APPPATH\\Views\\admin_dashboard.php', 135)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(68): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 10:34:33 --> Undefined variable $single_project
+in APPPATH\Views\admin_dashboard.php on line 188.
+ 1 APPPATH\Views\admin_dashboard.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $single_project', 'APPPATH\\Views\\admin_dashboard.php', 188)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(76): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 10:34:46 --> Undefined array key "id"
+in APPPATH\Views\admin_dashboard.php on line 196.
+ 1 APPPATH\Views\admin_dashboard.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin_dashboard.php', 196)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(76): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:00:49 --> Undefined array key "team_name"
+in APPPATH\Views\emptimesheet.php on line 231.
+ 1 APPPATH\Views\emptimesheet.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "team_name"', 'APPPATH\\Views\\emptimesheet.php', 231)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(211): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 11:02:00 --> mysqli_sql_exception: Unknown column 'emp1.team_id' in 'on clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(177): App\Models\TimesheetModel->getTimesheetsWithProjectNames('2')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 11:02:00 --> Unknown column 'emp1.team_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `timesheet_master`.`emp_id`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `timesheet_master`.`date`, `timesheet_master`.`report_time`, `timesheet_master`.`status`, `timesheet_master`.`id`, `project_list`.`project_name`
+FROM `timesheet_master`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` ON `project_list`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(22): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(177): App\Models\TimesheetModel->getTimesheetsWithProjectNames('2')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:02:58 --> Undefined array key "team_name"
+in APPPATH\Views\emptimesheet.php on line 231.
+ 1 APPPATH\Views\emptimesheet.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "team_name"', 'APPPATH\\Views\\emptimesheet.php', 231)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(211): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 11:04:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `tt1`.`team_name`
+FROM `timesheet_master`
+JOIN `employee` as `emp1` ON `emp1...' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Models\TimesheetModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(177): App\Models\TimesheetModel->getTimesheetsWithProjectNames('2')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-02 11:04:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `tt1`.`team_name`
+FROM `timesheet_master`
+JOIN `employee` as `emp1` ON `emp1...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `timesheet_master`.`emp_id`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `timesheet_master`.`date`, `timesheet_master`.`report_time`, `timesheet_master`.`status`, `timesheet_master`.`id`, `project_list`.`project_name`., `tt1`.`team_name`
+FROM `timesheet_master`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` ON `project_list`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TimesheetModel.php(23): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Timesheet.php(177): App\Models\TimesheetModel->getTimesheetsWithProjectNames('2')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:04:25 --> Undefined array key "module"
+in APPPATH\Views\emptimesheet.php on line 232.
+ 1 APPPATH\Views\emptimesheet.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "module"', 'APPPATH\\Views\\emptimesheet.php', 232)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(211): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:46:29 --> Undefined array key "row_id"
+in APPPATH\Controllers\Timesheet.php on line 828.
+ 1 APPPATH\Controllers\Timesheet.php(828): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "row_id"', 'APPPATH\\Controllers\\Timesheet.php', 828)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:53:53 --> Undefined array key "row_id"
+in APPPATH\Controllers\Timesheet.php on line 828.
+ 1 APPPATH\Controllers\Timesheet.php(828): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "row_id"', 'APPPATH\\Controllers\\Timesheet.php', 828)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:55:38 --> Undefined variable $navbar
+in APPPATH\Views\timesheet_edit.php on line 82.
+ 1 APPPATH\Views\timesheet_edit.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\timesheet_edit.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(899): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:57:11 --> Invalid file: "mytimesheet.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mytimesheet.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mytimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(899): view('mytimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:57:44 --> Undefined variable $newDate
+in APPPATH\Views\timesheet_edit.php on line 101.
+ 1 APPPATH\Views\timesheet_edit.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newDate', 'APPPATH\\Views\\timesheet_edit.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(899): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 11:58:30 --> Undefined variable $newDate
+in APPPATH\Views\timesheet_edit.php on line 101.
+ 1 APPPATH\Views\timesheet_edit.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newDate', 'APPPATH\\Views\\timesheet_edit.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet_edit', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(899): view('timesheet_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:04:20 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 849.
+ 1 APPPATH\Controllers\Timesheet.php(849): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:05:36 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 849.
+ 1 APPPATH\Controllers\Timesheet.php(849): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:07:20 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\Timesheet.php on line 849.
+ 1 APPPATH\Controllers\Timesheet.php(849): count('3')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 06:45:52 --> Cannot redeclare App\Controllers\Timesheet::update()
+in APPPATH\Controllers\Timesheet.php on line 1036.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-02 12:18:45 --> Uninitialized string offset 2
+in APPPATH\Controllers\Timesheet.php on line 1023.
+ 1 APPPATH\Controllers\Timesheet.php(1023): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 2', 'APPPATH\\Controllers\\Timesheet.php', 1023)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:19:11 --> Uninitialized string offset 2
+in APPPATH\Controllers\Timesheet.php on line 1023.
+ 1 APPPATH\Controllers\Timesheet.php(1023): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 2', 'APPPATH\\Controllers\\Timesheet.php', 1023)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:19:43 --> Uninitialized string offset 2
+in APPPATH\Controllers\Timesheet.php on line 1024.
+ 1 APPPATH\Controllers\Timesheet.php(1024): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 2', 'APPPATH\\Controllers\\Timesheet.php', 1024)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:29:12 --> Uninitialized string offset 2
+in APPPATH\Controllers\Timesheet.php on line 1025.
+ 1 APPPATH\Controllers\Timesheet.php(1025): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 2', 'APPPATH\\Controllers\\Timesheet.php', 1025)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:34:39 --> Undefined array key 6
+in APPPATH\Controllers\Timesheet.php on line 1025.
+ 1 APPPATH\Controllers\Timesheet.php(1025): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'APPPATH\\Controllers\\Timesheet.php', 1025)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:38:30 --> Undefined array key 6
+in APPPATH\Controllers\Timesheet.php on line 1026.
+ 1 APPPATH\Controllers\Timesheet.php(1026): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'APPPATH\\Controllers\\Timesheet.php', 1026)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:42:59 --> Undefined array key 7
+in APPPATH\Controllers\Timesheet.php on line 1026.
+ 1 APPPATH\Controllers\Timesheet.php(1026): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'APPPATH\\Controllers\\Timesheet.php', 1026)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:43:27 --> Undefined array key 7
+in APPPATH\Controllers\Timesheet.php on line 1029.
+ 1 APPPATH\Controllers\Timesheet.php(1029): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'APPPATH\\Controllers\\Timesheet.php', 1029)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->update()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:31:59 --> Undefined variable $data
+in APPPATH\Views\permission.php on line 153.
+ 1 APPPATH\Views\permission.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\permission.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(616): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:32:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\permission.php on line 158.
+ 1 APPPATH\Views\permission.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\permission.php', 158)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(616): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:34:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\permission.php on line 153.
+ 1 APPPATH\Views\permission.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\permission.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(616): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:35:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\permission.php on line 153.
+ 1 APPPATH\Views\permission.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\permission.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(616): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:35:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\permission.php on line 153.
+ 1 APPPATH\Views\permission.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\permission.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(616): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:07:23 --> mysqli_sql_exception: Unknown column 'emp1.name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(612): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:07:23 --> Unknown column 'emp1.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(612): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:08:12 --> mysqli_sql_exception: Unknown column 'emp1.name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp1`.`...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp1`.`...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp1`.`...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp1`.`...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:08:12 --> Unknown column 'emp1.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp1`.`name`, `tt1`.`team_name`
+FROM `timesheet_master`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 08:09:33 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\AdminController.php on line 613.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:10:17 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:10:17 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp1`, `emp1`.`name`, `tt1`.`team_name`, `emp1`.`emp_id`
+FROM `timesheet_master`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:10:55 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:10:55 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee`
+FROM `timesheet_master`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:31:48 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:31:48 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:33:44 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:33:44 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:34:02 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:34:02 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:35:34 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:35:34 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:35:58 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:35:58 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:35:59 --> mysqli_sql_exception: Unknown column 'employee' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:35:59 --> Unknown column 'employee' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employee` as `emp`
+FROM `employee`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:37:53 --> mysqli_sql_exception: Unknown column 'emp.emp_id' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp`.`e...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp`.`e...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp`.`e...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`e...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:37:53 --> Unknown column 'emp.emp_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM `employee`
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:37:55 --> mysqli_sql_exception: Unknown column 'emp.emp_id' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp`.`e...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp`.`e...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp`.`e...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`e...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:37:55 --> Unknown column 'emp.emp_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM `employee`
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:37:55 --> mysqli_sql_exception: Unknown column 'emp.emp_id' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp`.`e...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp`.`e...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp`.`e...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`e...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:37:55 --> Unknown column 'emp.emp_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM `employee`
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:37:55 --> mysqli_sql_exception: Unknown column 'emp.emp_id' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp`.`e...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp`.`e...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp`.`e...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`e...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:37:55 --> Unknown column 'emp.emp_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM `employee`
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:38:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `e...' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `employe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `employe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:38:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `e...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `employees` as `emp emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM `employee`
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(610): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-02 08:39:30 --> mysqli_sql_exception: Table 'company.employees' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `emp`.`e...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `emp`.`e...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `emp`.`e...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`e...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-02 08:39:30 --> Table 'company.employees' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `emp`.`emp_id`, `emp`.`team_id`, `emp`.`name`, `emp`.`email`, `emp`.`password`, `emp`.`role_id`, `emp`.`status`, `emp`.`otp`, `emp`.`reset_created_at`, `emp`.`update_on`, `emp`.`first_login`
+FROM (`employee`, `employees` as `emp`)
+LEFT JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(611): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 14:09:51 --> Undefined array key "team_name"
+in APPPATH\Views\permission.php on line 154.
+ 1 APPPATH\Views\permission.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "team_name"', 'APPPATH\\Views\\permission.php', 154)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(615): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 15:23:16 --> Undefined array key "id"
+in APPPATH\Views\permission.php on line 155.
+ 1 APPPATH\Views\permission.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\permission.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(609): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 15:49:21 --> Undefined array key "value"
+in APPPATH\Views\permission.php on line 161.
+ 1 APPPATH\Views\permission.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'APPPATH\\Views\\permission.php', 161)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(609): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 15:49:22 --> Undefined array key "value"
+in APPPATH\Views\permission.php on line 161.
+ 1 APPPATH\Views\permission.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "value"', 'APPPATH\\Views\\permission.php', 161)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(609): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 16:05:19 --> Undefined array key "id"
+in APPPATH\Views\permission.php on line 217.
+ 1 APPPATH\Views\permission.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\permission.php', 217)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\permission.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permission', [], true)
+ 5 APPPATH\Controllers\AdminController.php(609): view('permission', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_view()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:00:38 --> Too few arguments to function App\Controllers\AdminController::permission_action(), 0 passed in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AdminController.php on line 634.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:05:08 --> syntax error, unexpected token "exit"
+in APPPATH\Controllers\AdminController.php on line 641.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:05:32 --> syntax error, unexpected token "exit"
+in APPPATH\Controllers\AdminController.php on line 641.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:08:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(647): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:09:28 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(647): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:09:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(647): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:14:29 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(648): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:15:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AdminController.php(648): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:16:56 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1706.
+ 1 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray('1', 'update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], '1')
+ 3 APPPATH\Controllers\AdminController.php(648): CodeIgniter\Model->update('access_key', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:18:44 --> syntax error, unexpected identifier "where"
+in APPPATH\Controllers\AdminController.php on line 648.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:59:12 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:59:38 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 12:59:53 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:00:12 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:00:18 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:00:20 --> You cannot use "getCompiledUpdate()" in "App\Models\CompanyModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 858.
+ 1 SYSTEMPATH\Model.php(858): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\CompanyModel', 'getCompiledUpdate()')
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->checkBuilderMethod('getCompiledUpdate')
+ 3 APPPATH\Controllers\AdminController.php(643): CodeIgniter\Model->__call('getCompiledUpdate', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:04:29 --> foreach() argument must be of type array|object, string given
+in APPPATH\Controllers\AdminController.php on line 644.
+ 1 APPPATH\Controllers\AdminController.php(644): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Controllers\\AdminController.php', 644)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 13:04:44 --> foreach() argument must be of type array|object, string given
+in APPPATH\Controllers\AdminController.php on line 644.
+ 1 APPPATH\Controllers\AdminController.php(644): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Controllers\\AdminController.php', 644)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->permission_action()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 19:05:34 --> Undefined variable $access_key
+in APPPATH\Controllers\Timesheet.php on line 205.
+ 1 APPPATH\Controllers\Timesheet.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $access_key', 'APPPATH\\Controllers\\Timesheet.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 19:07:05 --> Undefined variable $access_key
+in APPPATH\Controllers\Timesheet.php on line 205.
+ 1 APPPATH\Controllers\Timesheet.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $access_key', 'APPPATH\\Controllers\\Timesheet.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 19:07:39 --> Undefined variable $access_key
+in APPPATH\Controllers\Timesheet.php on line 205.
+ 1 APPPATH\Controllers\Timesheet.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $access_key', 'APPPATH\\Controllers\\Timesheet.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 19:27:59 --> Undefined variable $disableAddButton
+in APPPATH\Views\emptimesheet.php on line 116.
+ 1 APPPATH\Views\emptimesheet.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disableAddButton', 'APPPATH\\Views\\emptimesheet.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(218): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 20:22:50 --> Undefined array key "access_key"
+in APPPATH\Views\timesheet.php on line 98.
+ 1 APPPATH\Views\timesheet.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "access_key"', 'APPPATH\\Views\\timesheet.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(39): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 20:23:32 --> Undefined array key "access_key"
+in APPPATH\Views\timesheet.php on line 98.
+ 1 APPPATH\Views\timesheet.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "access_key"', 'APPPATH\\Views\\timesheet.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(39): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 20:23:33 --> Undefined array key "access_key"
+in APPPATH\Views\timesheet.php on line 98.
+ 1 APPPATH\Views\timesheet.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "access_key"', 'APPPATH\\Views\\timesheet.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(39): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-02 20:31:07 --> Undefined array key "access_key"
+in APPPATH\Views\timesheet.php on line 98.
+ 1 APPPATH\Views\timesheet.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "access_key"', 'APPPATH\\Views\\timesheet.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(39): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

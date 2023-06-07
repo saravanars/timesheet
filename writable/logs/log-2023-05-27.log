@@ -1,0 +1,455 @@
+ERROR - 2023-05-27 15:20:35 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=28976 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-27 15:20:35 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-27 15:20:46 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=28976 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 173)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-27 15:20:46 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-27 15:20:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'company', 3306, '', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-27 15:20:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employee`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\FormController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->loginAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 15:23:54 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 125.
+ 1 APPPATH\Controllers\AdminController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 15:39:14 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 125.
+ 1 APPPATH\Controllers\AdminController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 15:45:30 --> Undefined array key 0
+in APPPATH\Controllers\AdminController.php on line 126.
+ 1 APPPATH\Controllers\AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\AdminController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '101')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 15:55:13 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 57.
+ 1 APPPATH\Views\pdf.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(132): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:01:59 --> Undefined array key "task_status"
+in APPPATH\Views\pdf.php on line 84.
+ 1 APPPATH\Views\pdf.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "task_status"', 'APPPATH\\Views\\pdf.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(132): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:02:11 --> Undefined array key "status"
+in APPPATH\Views\pdf.php on line 84.
+ 1 APPPATH\Views\pdf.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\pdf.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(132): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:02:25 --> Undefined array key "status"
+in APPPATH\Views\pdf.php on line 84.
+ 1 APPPATH\Views\pdf.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\pdf.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(132): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:04:06 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(132): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:13:13 --> Undefined array key "report_date"
+in APPPATH\Controllers\AdminController.php on line 133.
+ 1 APPPATH\Controllers\AdminController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_date"', 'APPPATH\\Controllers\\AdminController.php', 133)
+ 2 [internal function]: App\Controllers\AdminController->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\AdminController.php(132): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:13:49 --> Invalid file: "pdf_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_view', [], true)
+ 3 APPPATH\Controllers\AdminController.php(187): view('pdf_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:15:11 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(187): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:17:27 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(187): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:18:59 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(187): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:23:18 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(186): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:24:57 --> Undefined array key "date"
+in APPPATH\Views\pdf.php on line 93.
+ 1 APPPATH\Views\pdf.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\pdf.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(175): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:27:24 --> Undefined array key "report_date"
+in APPPATH\Controllers\AdminController.php on line 126.
+ 1 APPPATH\Controllers\AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_date"', 'APPPATH\\Controllers\\AdminController.php', 126)
+ 2 [internal function]: App\Controllers\AdminController->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\AdminController.php(125): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:27:26 --> Undefined array key "report_date"
+in APPPATH\Controllers\AdminController.php on line 126.
+ 1 APPPATH\Controllers\AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_date"', 'APPPATH\\Controllers\\AdminController.php', 126)
+ 2 [internal function]: App\Controllers\AdminController->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\AdminController.php(125): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:27:29 --> Undefined array key "report_date"
+in APPPATH\Controllers\AdminController.php on line 126.
+ 1 APPPATH\Controllers\AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_date"', 'APPPATH\\Controllers\\AdminController.php', 126)
+ 2 [internal function]: App\Controllers\AdminController->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\AdminController.php(125): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:27:30 --> Undefined array key "report_date"
+in APPPATH\Controllers\AdminController.php on line 126.
+ 1 APPPATH\Controllers\AdminController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report_date"', 'APPPATH\\Controllers\\AdminController.php', 126)
+ 2 [internal function]: App\Controllers\AdminController->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\AdminController.php(125): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:28:42 --> Undefined array key "status"
+in APPPATH\Views\pdf.php on line 97.
+ 1 APPPATH\Views\pdf.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\pdf.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(130): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '0', '101')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:28:56 --> Undefined array key "status"
+in APPPATH\Views\pdf.php on line 97.
+ 1 APPPATH\Views\pdf.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\pdf.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(130): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '0', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:35:42 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 54.
+ 1 APPPATH\Views\pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(174): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:36:04 --> Undefined variable $download
+in APPPATH\Views\pdf.php on line 55.
+ 1 APPPATH\Views\pdf.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $download', 'APPPATH\\Views\\pdf.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(174): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 16:59:59 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 97.
+ 1 APPPATH\Controllers\AdminController.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:01:27 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 97.
+ 1 APPPATH\Controllers\AdminController.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:32:55 --> Call to a member function render() on string
+in APPPATH\Controllers\AdminController.php on line 199.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:33:43 --> Call to a member function render() on string
+in APPPATH\Controllers\AdminController.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:34:14 --> Call to a member function render() on string
+in APPPATH\Controllers\AdminController.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:34:40 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 228.
+ 1 APPPATH\Controllers\AdminController.php(228): count(null)
+ 2 APPPATH\Controllers\AdminController.php(202): App\Controllers\AdminController->download([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:38:52 --> Undefined variable $results
+in APPPATH\Controllers\AdminController.php on line 215.
+ 1 APPPATH\Controllers\AdminController.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'APPPATH\\Controllers\\AdminController.php', 215)
+ 2 APPPATH\Controllers\AdminController.php(202): App\Controllers\AdminController->download([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:39:31 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminController.php on line 229.
+ 1 APPPATH\Controllers\AdminController.php(229): count(null)
+ 2 APPPATH\Controllers\AdminController.php(202): App\Controllers\AdminController->download([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '1', '0')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 17:41:45 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 271.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

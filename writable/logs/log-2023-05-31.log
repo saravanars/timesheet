@@ -1,0 +1,90 @@
+CRITICAL - 2023-05-31 10:42:43 --> Call to undefined method CodeIgniter\Validation\Validation::setErrorMessage()
+in APPPATH\Controllers\Timesheet.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 10:54:07 --> Call to undefined method CodeIgniter\Session\Session::hasFlashdata()
+in APPPATH\Views\timesheet.php on line 62.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(36): view('timesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-31 11:34:47 --> mysqli_sql_exception: Unknown column 'project_list.id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '106')
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(138): CodeIgniter\BaseModel->find('106')
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-31 11:34:47 --> Unknown column 'project_list.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project_list`
+WHERE `project_list`.`id` = :project_list.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '106')
+ 4 APPPATH\Controllers\Timesheet.php(138): CodeIgniter\BaseModel->find('106')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-31 11:35:05 --> mysqli_sql_exception: Unknown column 'project_list.id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '103')
+#6 C:\xampp\htdocs\timesheet\app\Controllers\Timesheet.php(138): CodeIgniter\BaseModel->find('103')
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-31 11:35:05 --> Unknown column 'project_list.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project_list`
+WHERE `project_list`.`id` = :project_list.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '103')
+ 4 APPPATH\Controllers\Timesheet.php(138): CodeIgniter\BaseModel->find('103')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->saveTimesheet()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 06:27:03 --> Undefined variable $projects_name
+in APPPATH\Views\timesheet.php on line 122.
+ 1 APPPATH\Views\timesheet.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projects_name', 'APPPATH\\Views\\timesheet.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\timesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('timesheet', [], true)
+ 5 APPPATH\Controllers\EmpController.php(17): view('timesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 06:37:20 --> Undefined variable $navbar
+in APPPATH\Views\user_dashboard.php on line 1.
+ 1 APPPATH\Views\user_dashboard.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\user_dashboard.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/user_dashboard', [], true)
+ 5 APPPATH\Controllers\EmpController.php(29): view('/user_dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EmpController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
