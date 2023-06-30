@@ -392,6 +392,50 @@
 
 
       })
+
+
+
+
+      $(document).on('input', 'input[id^="hours_"]', function() {
+    var rowId = $(this).attr('id').split('_')[1];
+    var hourss = $(this).val();
+
+    var $responseMessage = $('#response-message' + rowId); // Select the corresponding response message element
+
+    $.ajax({
+        url: '<?php echo base_url("timesheet/ajaxvalidation"); ?>',
+        method: 'POST',
+        data: {
+            rowId: rowId,
+            hourss: hourss
+        },
+        success: function(response) {
+            var parsedResponse = JSON.parse(response);
+
+            // Clear previous error messages
+            $responseMessage.empty();
+
+            if (parsedResponse.hasOwnProperty('missing')) {
+                var error = ' ' + parsedResponse.missing;
+                $responseMessage.text(error).addClass('error');
+                $("#submit").prop("disabled", true);
+                console.log(error);
+            } else if (parsedResponse.hasOwnProperty('error')) {
+                var error = '' + parsedResponse.error;
+                $responseMessage.text(error).addClass('error');
+                $("#submit").prop("disabled", true);
+                console.log(error);
+            } else if (parsedResponse.hasOwnProperty('pass')) {
+                $("#submit").prop("disabled", false);
+                console.log(parsedResponse.pass); // Assuming 'success' is the response message
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            $responseMessage.text("Ajax error: " + textStatus + " " + errorThrown).addClass('error');
+        }
+    });
+});
+
     });
   </script>
 

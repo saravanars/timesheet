@@ -15,7 +15,7 @@ class LoginController extends Controller
 {
     public function __construct()
     {
-        public $CompanyModel;
+       
         helper('form');
      
         // $this->load->view("includes/header.php",$headerData);

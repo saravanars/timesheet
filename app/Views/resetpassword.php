@@ -91,10 +91,10 @@ input.error {
 				</div>
         <input type="hidden" name="id" value="<?php ($id);?>">
 				<button type="submit" class="btn btn-primary btn-block">Confirm</button>
-				
+<!-- 				
 				<div class="sign-up">
 				<p>Don't have an account ? <a href="">Create One</a></p>
-				</div>
+				</div> -->
 			</form>
 		</div>
 	</div>
