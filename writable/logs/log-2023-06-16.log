@@ -1,0 +1,881 @@
+ERROR - 2023-06-16 06:00:15 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->index()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 06:00:15 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(53): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 06:19:40 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(53): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->index()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 06:19:40 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(53): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:50:50 --> Undefined array key "date"
+in APPPATH\Views\admin_dashboard.php on line 195.
+ 1 APPPATH\Views\admin_dashboard.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\admin_dashboard.php', 195)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(82): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 06:29:31 --> Undefined array key "date"
+in APPPATH\Views\pdf.php on line 122.
+ 1 APPPATH\Views\pdf.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\pdf.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(261): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '0', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 06:29:42 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(478): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 06:29:42 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`date`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(478): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 06:32:47 --> Undefined array key "date"
+in APPPATH\Views\pdf.php on line 122.
+ 1 APPPATH\Views\pdf.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\pdf.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(261): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '0', '0')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 06:46:42 --> mysqli_sql_exception: Unknown column 'date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(528): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 06:46:42 --> Unknown column 'date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+WHERE `emp_id` = :emp_id:
+AND `project_id` = :project_id:
+AND `date` = :date:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(528): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:02:18 --> Undefined array key "date"
+in APPPATH\Views\pdf.php on line 122.
+ 1 APPPATH\Views\pdf.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'APPPATH\\Views\\pdf.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf', [], true)
+ 5 APPPATH\Controllers\AdminController.php(261): view('pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '0', '102')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 07:03:30 --> mysqli_sql_exception: Unknown column 'date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(384): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->download()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 07:03:30 --> Unknown column 'date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_master`
+WHERE `emp_id` = :emp_id:
+AND `project_id` = :project_id:
+AND `date` = :date:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AdminController.php(384): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:42:39 --> Undefined array key 0
+in APPPATH\Views\emptimesheet.php on line 128.
+ 1 APPPATH\Views\emptimesheet.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\emptimesheet.php', 128)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:48:11 --> Undefined variable $employee_timesheets
+in APPPATH\Views\admin_dashboard.php on line 194.
+ 1 APPPATH\Views\admin_dashboard.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_timesheets', 'APPPATH\\Views\\admin_dashboard.php', 194)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(84): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:50:36 --> Undefined array key "employees_report_id"
+in APPPATH\Views\admin_dashboard.php on line 159.
+ 1 APPPATH\Views\admin_dashboard.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employees_report_id"', 'APPPATH\\Views\\admin_dashboard.php', 159)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(84): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:51:28 --> Undefined array key "employees_report_id"
+in APPPATH\Views\admin_dashboard.php on line 159.
+ 1 APPPATH\Views\admin_dashboard.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employees_report_id"', 'APPPATH\\Views\\admin_dashboard.php', 159)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(84): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:51:29 --> Undefined array key "employees_report_id"
+in APPPATH\Views\admin_dashboard.php on line 159.
+ 1 APPPATH\Views\admin_dashboard.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employees_report_id"', 'APPPATH\\Views\\admin_dashboard.php', 159)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(84): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 12:51:30 --> Undefined array key "employees_report_id"
+in APPPATH\Views\admin_dashboard.php on line 159.
+ 1 APPPATH\Views\admin_dashboard.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employees_report_id"', 'APPPATH\\Views\\admin_dashboard.php', 159)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(84): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:31:39 --> ucfirst(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\csv.php on line 122.
+ 1 APPPATH\Views\csv.php(122): ucfirst([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\csv.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('csv', [], true)
+ 5 APPPATH\Controllers\AdminController.php(507): view('csv', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '0', '102')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:33:25 --> Array to string conversion
+in APPPATH\Controllers\AdminController.php on line 602.
+ 1 APPPATH\Controllers\AdminController.php(602): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminController.php', 602)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:38:16 --> Array to string conversion
+in APPPATH\Controllers\AdminController.php on line 704.
+ 1 APPPATH\Controllers\AdminController.php(704): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminController.php', 704)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:49:29 --> Array to string conversion
+in APPPATH\Controllers\AdminController.php on line 709.
+ 1 APPPATH\Controllers\AdminController.php(709): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminController.php', 709)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:51:25 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 685.
+ 1 APPPATH\Controllers\AdminController.php(685): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 685)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:51:40 --> Undefined variable $name
+in APPPATH\Controllers\AdminController.php on line 709.
+ 1 APPPATH\Controllers\AdminController.php(709): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Controllers\\AdminController.php', 709)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:52:31 --> Undefined variable $name
+in APPPATH\Controllers\AdminController.php on line 661.
+ 1 APPPATH\Controllers\AdminController.php(661): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Controllers\\AdminController.php', 661)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:53:01 --> Undefined variable $name
+in APPPATH\Controllers\AdminController.php on line 711.
+ 1 APPPATH\Controllers\AdminController.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Controllers\\AdminController.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:54:18 --> Undefined array key "team_name"
+in APPPATH\Controllers\AdminController.php on line 697.
+ 1 APPPATH\Controllers\AdminController.php(697): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "team_name"', 'APPPATH\\Controllers\\AdminController.php', 697)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 08:55:06 --> Undefined variable $teamName
+in APPPATH\Controllers\AdminController.php on line 713.
+ 1 APPPATH\Controllers\AdminController.php(713): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $teamName', 'APPPATH\\Controllers\\AdminController.php', 713)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 09:16:30 --> Undefined variable $csvArray
+in APPPATH\Controllers\AdminController.php on line 707.
+ 1 APPPATH\Controllers\AdminController.php(707): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $csvArray', 'APPPATH\\Controllers\\AdminController.php', 707)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 09:23:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 799.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 09:32:28 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 792.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:49:11 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 896.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:49:23 --> Unmatched '}'
+in APPPATH\Controllers\AdminController.php on line 812.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:49:57 --> Unmatched '}'
+in APPPATH\Controllers\AdminController.php on line 798.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:50:42 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 673.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:53:13 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 674.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:53:34 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:53:39 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:54:44 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:54:49 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:58:11 --> require(../../vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 APPPATH\Controllers\AdminController.php(676): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(../../vendor/autoload.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\AdminController.php', 676)
+ 2 APPPATH\Controllers\AdminController.php(676): require()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:58:49 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 677.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 10:59:55 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 677.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:03:24 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 677.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:05:45 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:05:49 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 676.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:06:50 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 601.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:07:00 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\AdminController.php on line 601.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 11:07:10 --> Class "PhpOffice\PhpSpreadsheet\IOFactory" not found
+in APPPATH\Controllers\AdminController.php on line 603.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 11:33:45 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'order clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(407): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '3', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 11:33:45 --> Unknown column 'timesheet_master.date' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`project_id` = :timesheet_master.project_id:
+AND `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(407): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '3', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 12:34:55 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'order clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(157): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '3', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 12:34:55 --> Unknown column 'timesheet_master.date' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(157): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->search('0', '0', '3', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 12:58:55 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'order clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 12:58:55 --> Unknown column 'timesheet_master.date' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 13:02:07 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'order clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 13:02:07 --> Unknown column 'timesheet_master.date' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+WHERE `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`date` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('0', '0', '1', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:11:42 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 533.
+ 1 APPPATH\Controllers\AdminController.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 533)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:12:44 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 486.
+ 1 APPPATH\Controllers\AdminController.php(486): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 486)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:12:56 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 486.
+ 1 APPPATH\Controllers\AdminController.php(486): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 486)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:13:43 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 486.
+ 1 APPPATH\Controllers\AdminController.php(486): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 486)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:13:46 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 486.
+ 1 APPPATH\Controllers\AdminController.php(486): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 486)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:13:58 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 486.
+ 1 APPPATH\Controllers\AdminController.php(486): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 486)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:18:25 --> Uninitialized string offset 3
+in APPPATH\Controllers\AdminController.php on line 478.
+ 1 APPPATH\Controllers\AdminController.php(478): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 3', 'APPPATH\\Controllers\\AdminController.php', 478)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:19:59 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 526)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:21:18 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 526)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:21:35 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 526)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:21:59 --> Undefined array key "name"
+in APPPATH\Controllers\AdminController.php on line 526.
+ 1 APPPATH\Controllers\AdminController.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\AdminController.php', 526)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 13:40:57 --> mysqli_sql_exception: Unknown column 'date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 13:40:57 --> Unknown column 'date' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-16 13:42:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Date >= '2023-06-01'
+AND (report_time)Date <= '2023-06-13'' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-16 13:42:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Date >= '2023-06-01'
+AND (report_time)Date <= '2023-06-13'' at line 9
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE (report_time)Date >= :(report_time)Date:
+AND (report_time)Date <= :(report_time)Date.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(409): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:43:48 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:44:05 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:44:06 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:46:05 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:47:16 --> Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 741.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(698): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->where(Object(Closure))
+ 3 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:48:38 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:22 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:23 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:23 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:23 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:24 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:24 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:24 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:50:59 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(377): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:52:53 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:52:54 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:52:55 --> Call to undefined method App\Models\TimesheetModel::whereRaw
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('whereRaw', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 13:53:26 --> Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 741.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(698): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->where(Object(Closure))
+ 3 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-13', '0', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

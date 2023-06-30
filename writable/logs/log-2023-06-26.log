@@ -1,0 +1,317 @@
+ERROR - 2023-06-26 05:36:52 --> mysqli_sql_exception: Unknown column 'emp_id' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `project...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `project...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `project...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `project...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(756): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(971): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->employee_active()
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-26 05:36:52 --> Unknown column 'emp_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `project_list` SET `status` = \'0\'
+WHERE `emp_id` = \'37\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `project_list` SET `status` = \'0\'
+WHERE `emp_id` = \'37\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `project_list` SET `status` = \'0\'
+WHERE `emp_id` = \'37\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `project_list` SET `status` = :status:
+WHERE `emp_id` = :emp_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\AdminController.php(971): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employee_active()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:50:29 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:53:22 --> Call to a member function format() on string
+in APPPATH\Controllers\Timesheet.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:54:14 --> Call to a member function format() on string
+in APPPATH\Controllers\Timesheet.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:54:15 --> Call to a member function format() on string
+in APPPATH\Controllers\Timesheet.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:54:16 --> Call to a member function format() on string
+in APPPATH\Controllers\Timesheet.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:55:18 --> Call to a member function format() on string
+in APPPATH\Controllers\Timesheet.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 11:59:40 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 12:02:00 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 12:05:57 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Timesheet.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Timesheet->saveTimesheet()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 15:38:40 --> Undefined variable $employees_reports
+in APPPATH\Views\admin_dashboard.php on line 208.
+ 1 APPPATH\Views\admin_dashboard.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees_reports', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(77): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 15:38:59 --> Undefined variable $employees_reports
+in APPPATH\Views\admin_dashboard.php on line 208.
+ 1 APPPATH\Views\admin_dashboard.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees_reports', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(77): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 15:40:15 --> Undefined variable $employees_reports
+in APPPATH\Views\admin_dashboard.php on line 210.
+ 1 APPPATH\Views\admin_dashboard.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees_reports', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(77): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 15:41:07 --> Undefined variable $employees_reports
+in APPPATH\Views\admin_dashboard.php on line 210.
+ 1 APPPATH\Views\admin_dashboard.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees_reports', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(77): view('/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:08:33 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1015): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:09:42 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:09:45 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:10:13 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:10:14 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:10:15 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 248.
+ 1 APPPATH\Views\employees_adding.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 248)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 12:41:28 --> CodeIgniter\HTTP\RedirectResponse::to(): Argument #2 ($code) must be of type ?int, array given, called in C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php on line 1063
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 32.
+ 1 APPPATH\Controllers\AdminController.php(1063): CodeIgniter\HTTP\RedirectResponse->to('add_employees', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_adding()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:24:12 --> Undefined variable $team_master
+in APPPATH\Views\employees_adding.php on line 319.
+ 1 APPPATH\Views\employees_adding.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $team_master', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 319)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:24:35 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:24:36 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:24:45 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:25:04 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:25:05 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:25:06 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1016): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:25:59 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1015): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 18:26:03 --> Undefined variable $session
+in APPPATH\Views\employees_adding.php on line 388.
+ 1 APPPATH\Views\employees_adding.php(388): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php', 388)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\employees_adding.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('employees_adding', [], true)
+ 5 APPPATH\Controllers\AdminController.php(1015): view('employees_adding', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 12:57:07 --> Undefined variable $session
+in APPPATH\Controllers\AdminController.php on line 1014.
+ 1 APPPATH\Controllers\AdminController.php(1014): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 1014)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-26 12:57:08 --> Undefined variable $session
+in APPPATH\Controllers\AdminController.php on line 1014.
+ 1 APPPATH\Controllers\AdminController.php(1014): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 1014)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_page()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

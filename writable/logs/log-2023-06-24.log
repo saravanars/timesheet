@@ -1,0 +1,275 @@
+CRITICAL - 2023-06-24 05:13:25 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(712): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:13:53 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(712): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:14:08 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(712): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:14:19 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(712): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:15:16 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(709): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:16:23 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(710): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:17:24 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(710): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 05:19:43 --> Call to undefined method App\Models\TimesheetModel::group_by
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\AdminController.php(710): CodeIgniter\Model->__call('group_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-24 05:21:47 --> mysqli_sql_exception: Unknown column 'e.emp_id' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `e`.`emp...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `e`.`emp...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `e`.`emp...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `e`.`emp...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(723): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-24 05:21:47 --> Unknown column 'e.emp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `e`.`emp_id`, `e`.`name`, COALESCE(SUM(tm.hours), 0) AS total_hours
+FROM `timesheet_master`
+LEFT JOIN `timesheet_master` `tm` ON `e`.`emp_id` = `tm`.`emp_id`
+WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-23\'
+GROUP BY `e`.`emp_id`, `e`.`name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `e`.`emp_id`, `e`.`name`, COALESCE(SUM(tm.hours), 0) AS total_hours
+FROM `timesheet_master`
+LEFT JOIN `timesheet_master` `tm` ON `e`.`emp_id` = `tm`.`emp_id`
+WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-23\'
+GROUP BY `e`.`emp_id`, `e`.`name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `e`.`emp_id`, `e`.`name`, COALESCE(SUM(tm.hours), 0) AS total_hours
+FROM `timesheet_master`
+LEFT JOIN `timesheet_master` `tm` ON `e`.`emp_id` = `tm`.`emp_id`
+WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-23\'
+GROUP BY `e`.`emp_id`, `e`.`name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `e`.`emp_id`, `e`.`name`, COALESCE(SUM(tm.hours), 0) AS total_hours
+FROM `timesheet_master`
+LEFT JOIN `timesheet_master` `tm` ON `e`.`emp_id` = `tm`.`emp_id`
+WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = :DATE_FORMAT(tm.report_time, \'%Y-%m-%d\'):
+GROUP BY `e`.`emp_id`, `e`.`name`', [...], false)
+ 5 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController.php(723): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 06:06:55 --> Attempt to read property "row_number" on array
+in APPPATH\Controllers\AdminController.php on line 744.
+ 1 APPPATH\Controllers\AdminController.php(744): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "row_number" on array', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 744)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 06:57:51 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\AdminController.php on line 782.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 782)
+ 2 APPPATH\Controllers\AdminController.php(782): mail('saravanakumar_r@itflexsolutions.com', '2023-06-23 - Employee Working Hours Report', '<html><body><h2>Employee Working Hours Report</h2><table id="employeeTable"><table>
+                <thead>
+                    <tr>
+                        <th>SNo</th>
+                        <th>Name</th>
+                        <th>Total Hours</th>
+                    </tr>
+                </thead>
+                <tbody><tr>
+                    <td>1</td>
+                    <td>SaravanaKumar R</td>
+                    <td>3</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Vijaya Babu R</td>
+                    <td>6.5</td>
+                </tr><tr>
+                    <td>3</td>
+                    <td>Mohammedizzathtullah</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>4</td>
+                    <td>Ramaraj</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>5</td>
+                    <td>Valarmathi</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>6</td>
+                    <td>Elangamani R</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>7</td>
+                    <td>Mani</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>8</td>
+                    <td>Vishnukumar</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>9</td>
+                    <td>Chinnapparaj</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>10</td>
+                    <td>Solaimani V</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>11</td>
+                    <td>Meenu Sowmiya S</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>12</td>
+                    <td>Senthil Pandiyan</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>13</td>
+                    <td> Shanmugapandian</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>14</td>
+                    <td>Saravanakumar P</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>15</td>
+                    <td>Azhaguthilip P
+</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>16</td>
+                    <td> Kanagadurga A</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>17</td>
+                    <td>Ponirulappan P</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>18</td>
+                    <td>Benitta I</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>19</td>
+                    <td> Rani R</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>20</td>
+                    <td> Arun Kumar S</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>21</td>
+                    <td>Muthulakshmi T</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>22</td>
+                    <td>Satheesh T</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>23</td>
+                    <td>Mahalakshmi A A</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>24</td>
+                    <td>Vimala Vinnarasi U</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>25</td>
+                    <td>Yogeswari P</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>26</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>27</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>28</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>29</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>30</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>31</td>
+                    <td></td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>32</td>
+                    <td>ravi</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>33</td>
+                    <td>naveen</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>34</td>
+                    <td>daaeqereerer</td>
+                    <td>0</td>
+                </tr><tr>
+                    <td>35</td>
+                    <td>rt</td>
+                    <td>0</td>
+                </tr></tbody></table></table><script>
+                document.addEventListener(\'DOMContentLoaded\', function() {
+                    $(\'#employeeTable\').DataTable();
+                });
+                </script></body></html>', 'MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: saravanakumar_r@itflexsolutions.com
+')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-24 11:23:14 --> Undefined variable $Arun
+in APPPATH\Controllers\AdminController.php on line 1011.
+ 1 APPPATH\Controllers\AdminController.php(1011): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Arun', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 1011)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->employees_adding()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

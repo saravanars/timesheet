@@ -1,0 +1,251 @@
+CRITICAL - 2023-06-19 12:05:00 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\emptimesheet.php on line 153.
+ 1 APPPATH\Views\emptimesheet.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(155): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 12:36:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-06-19 12:36:21 --> 
+hello: 
+The following SMTP error was encountered: 
+CRITICAL - 2023-06-19 07:19:37 --> Invalid file: "fd.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fd.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('fd', [], true)
+ 3 APPPATH\Controllers\FormController.php(228): view('fd', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\FormController->resetpassword('ac4ae22259205c795a1ea3f3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-19 08:29:04 --> mysqli_sql_exception: Not unique table/alias: 't5' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(393): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-19', '1', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-19 08:29:04 --> Not unique table/alias: 't5'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-19\'
+AND `timesheet_master`.`project_id` = \'102\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-19\'
+AND `timesheet_master`.`project_id` = \'102\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-19\'
+AND `timesheet_master`.`project_id` = \'102\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= :DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\'):
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= :DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\').1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:
+AND `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`report_time` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(393): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-19', '1', '102')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:27:29 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\emptimesheet.php on line 153.
+ 1 APPPATH\Views\emptimesheet.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 153)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(159): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:30:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(166): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:30:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(166): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:30:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(166): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:31:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(166): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 11:02:47 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Timesheet.php on line 154.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 11:02:48 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Timesheet.php on line 154.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 11:02:49 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Timesheet.php on line 154.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\Timesheet.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Timesheet')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Timesheet')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Timesheet', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:33:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(166): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:34:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(165): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:34:39 --> Trying to access array offset on value of type null
+in APPPATH\Views\emptimesheet.php on line 155.
+ 1 APPPATH\Views\emptimesheet.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(165): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 16:57:54 --> syntax error, unexpected token "endif"
+in APPPATH\Views\emptimesheet.php on line 170.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(163): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,182 @@
+CRITICAL - 2023-06-08 11:45:30 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 278.
+ 1 APPPATH\Controllers\Timesheet.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:45:31 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 278.
+ 1 APPPATH\Controllers\Timesheet.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:49:28 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:49:29 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:54:22 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:54:24 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:56:15 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:56:16 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:58:04 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 11:58:05 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:02:32 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:02:34 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:02:35 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:11:39 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:36:15 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:36:16 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:36:18 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:36:27 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:36:28 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:37:52 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:57:11 --> Undefined variable $response
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 13:14:14 --> Undefined variable $empty
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empty', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 13:14:16 --> Undefined variable $empty
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empty', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 13:14:18 --> Undefined variable $empty
+in APPPATH\Controllers\Timesheet.php on line 279.
+ 1 APPPATH\Controllers\Timesheet.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empty', 'APPPATH\\Controllers\\Timesheet.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 20:50:43 --> Undefined array key "hourss"
+in APPPATH\Controllers\Timesheet.php on line 263.
+ 1 APPPATH\Controllers\Timesheet.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hourss"', 'APPPATH\\Controllers\\Timesheet.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 22:11:45 --> Undefined array key "task"
+in APPPATH\Controllers\Timesheet.php on line 285.
+ 1 APPPATH\Controllers\Timesheet.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "task"', 'APPPATH\\Controllers\\Timesheet.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->ajaxValidation_task()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

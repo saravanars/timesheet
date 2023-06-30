@@ -1,0 +1,1743 @@
+ERROR - 2023-06-28 05:28:43 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:28:43 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 05:29:05 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:29:05 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 05:29:46 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:29:46 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 05:30:22 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:30:22 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 05:32:41 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:32:41 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 05:33:12 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 05:33:12 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+               FROM employee e
+                   INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                       WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-27\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-28\'
+                    GROUP BY e.emp_id, e.name, e.email
+                     HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 05:43:14 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\AdminController.php(896): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 05:43:22 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\AdminController.php(896): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 06:05:33 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\AdminController.php on line 884.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 06:07:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getLastQuery()
+in APPPATH\Controllers\AdminController.php on line 879.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 07:59:42 --> syntax error, unexpected single-quoted string ""
+in APPPATH\Controllers\AdminController.php on line 802.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:00:34 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\AdminController.php on line 887.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:01:07 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\AdminController.php on line 887.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 09:03:30 --> mysqli_sql_exception: Table 'company.composer_project' doesn't exist in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 09:03:30 --> Table 'company.composer_project' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, p.project_name, COALESCE(SUM(t.hours), 0) AS total_hours, p.project_id
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+            LEFT JOIN composer_project cp ON t.project_id = cp.project_id
+            LEFT JOIN project_list p ON cp.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id
+            HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, p.project_name, COALESCE(SUM(t.hours), 0) AS total_hours, p.project_id
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+            LEFT JOIN composer_project cp ON t.project_id = cp.project_id
+            LEFT JOIN project_list p ON cp.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id
+            HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, p.project_name, COALESCE(SUM(t.hours), 0) AS total_hours, p.project_id
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+            LEFT JOIN composer_project cp ON t.project_id = cp.project_id
+            LEFT JOIN project_list p ON cp.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id
+            HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, p.project_name, COALESCE(SUM(t.hours), 0) AS total_hours, p.project_id
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = ?
+            LEFT JOIN composer_project cp ON t.project_id = cp.project_id
+            LEFT JOIN project_list p ON cp.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id
+            HAVING total_hours < 8', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 09:11:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e...' at line 1 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 09:11:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email,p.project_name ,t.task,t.module COALESCE(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id, p.project_name
+            HAVING COALESCE(SUM(t.hours), 0) < 8
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email,p.project_name ,t.task,t.module COALESCE(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id, p.project_name
+            HAVING COALESCE(SUM(t.hours), 0) < 8
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email,p.project_name ,t.task,t.module COALESCE(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id, p.project_name
+            HAVING COALESCE(SUM(t.hours), 0) < 8
+            ')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email,p.project_name ,t.task,t.module COALESCE(SUM(t.hours), 0) AS total_hours, p.project_name
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, p.project_id, p.project_name
+            HAVING COALESCE(SUM(t.hours), 0) < 8
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:41:52 --> syntax error, unexpected variable "$result"
+in APPPATH\Controllers\AdminController.php on line 887.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:42:02 --> syntax error, unexpected variable "$result"
+in APPPATH\Controllers\AdminController.php on line 887.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:42:30 --> syntax error, unexpected variable "$result"
+in APPPATH\Controllers\AdminController.php on line 887.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 09:58:01 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 967.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:16:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-06-28 10:16:44 --> 
+hello: 
+The following SMTP error was encountered: 
+CRITICAL - 2023-06-28 10:22:34 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 953.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:22:52 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:22:52 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:23:58 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:23:58 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            WHERE COALESCE(SUM(t.hours), 0) < 8
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:29:40 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(879): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:29:40 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 4 APPPATH\Controllers\AdminController.php(879): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+                WHERE COALESCE(SUM(t.hours), 0) < 8
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 10:31:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 956.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 10:36:43 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdminController.php on line 939.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 10:37:18 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdminController.php on line 939.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 10:37:19 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\AdminController.php on line 939.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:38:04 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:38:04 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 4 APPPATH\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:39:01 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:39:01 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ')
+ 4 APPPATH\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+                WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+                GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:40:26 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:40:26 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 4 APPPATH\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:41:05 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:41:05 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 4 APPPATH\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 10:41:19 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 10:41:19 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(\'2023-06-27\')
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ')
+ 4 APPPATH\Controllers\AdminController.php(875): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email AS email_id, t.task, t.module, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = DATE(?)
+            WHERE COALESCE(SUM(t.hours), 0) < 8 OR t.emp_id IS NULL
+            GROUP BY e.emp_id, e.name, e.email, t.task, t.module, t.hours
+        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 10:54:12 --> Undefined array key "hours"
+in APPPATH\Controllers\AdminController.php on line 898.
+ 1 APPPATH\Controllers\AdminController.php(898): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hours"', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 898)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:30:08 --> mysqli_sql_exception: Unknown column 't.sno' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:30:08 --> Unknown column 't.sno' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            t.sno, t.project_name, t.module, t.task, t.hours
+     FROM employee e
+     LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+     LEFT JOIN project_list p ON t.project_id = p.project_id
+     GROUP BY e.emp_id, e.name, e.email, t.sno, t.project_name, t.module, t.task, t.hours
+     HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL;
+     
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            t.sno, t.project_name, t.module, t.task, t.hours
+     FROM employee e
+     LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+     LEFT JOIN project_list p ON t.project_id = p.project_id
+     GROUP BY e.emp_id, e.name, e.email, t.sno, t.project_name, t.module, t.task, t.hours
+     HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL;
+     
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            t.sno, t.project_name, t.module, t.task, t.hours
+     FROM employee e
+     LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = \'2023-06-27\'
+     LEFT JOIN project_list p ON t.project_id = p.project_id
+     GROUP BY e.emp_id, e.name, e.email, t.sno, t.project_name, t.module, t.task, t.hours
+     HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL;
+     
+            ')
+ 4 APPPATH\Controllers\AdminController.php(876): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            t.sno, t.project_name, t.module, t.task, t.hours
+     FROM employee e
+     LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE_FORMAT(t.report_time, \'%Y-%m-%d\') = ?
+     LEFT JOIN project_list p ON t.project_id = p.project_id
+     GROUP BY e.emp_id, e.name, e.email, t.sno, t.project_name, t.module, t.task, t.hours
+     HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL;
+     
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:33:33 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:33:33 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:33:35 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:33:35 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:33:56 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:33:56 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:34:05 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:34:05 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:34:37 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:34:37 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:36:17 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(884): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:36:17 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(884): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:37:10 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(884): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:37:10 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(884): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                   t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:40:03 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:40:03 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:41:01 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:41:01 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:41:16 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:41:16 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:41:30 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:41:30 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:41:39 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:41:39 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(880): CodeIgniter\Database\BaseConnection->query('
+                SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                    t.project_name, t.module, t.task, t.hours
+                FROM employee e
+                LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+                LEFT JOIN project_list p ON t.project_id = p.project_id
+                GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+                HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:43:05 --> mysqli_sql_exception: Unknown column 't.project_name' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:43:05 --> Unknown column 't.project_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+                t.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:44:05 --> mysqli_sql_exception: Unknown column 't.project_name' in 'group statement' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:44:05 --> Unknown column 't.project_name' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-28 11:44:13 --> mysqli_sql_exception: Unknown column 't.project_name' in 'group statement' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n            S...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('\r\n            S...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-28 11:44:13 --> Unknown column 't.project_name' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = \'2023-06-27\'
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL')
+ 4 APPPATH\Controllers\AdminController.php(887): CodeIgniter\Database\BaseConnection->query('
+            SELECT e.emp_id, e.name, e.email, COALESCE(SUM(t.hours), 0) AS total_hours,
+            p.project_name, t.module, t.task, t.hours
+            FROM employee e
+            LEFT JOIN timesheet_master t ON e.emp_id = t.emp_id AND DATE(t.report_time) = ?
+            LEFT JOIN project_list p ON t.project_id = p.project_id
+            GROUP BY e.emp_id, e.name, e.email, t.project_name, t.module, t.task, t.hours
+            HAVING COALESCE(SUM(t.hours), 0) < 8 OR SUM(t.hours) IS NULL', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 11:52:42 --> Undefined array key "emp_id"
+in APPPATH\Controllers\AdminController.php on line 922.
+ 1 APPPATH\Controllers\AdminController.php(922): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 922)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 11:52:46 --> Undefined array key "emp_id"
+in APPPATH\Controllers\AdminController.php on line 922.
+ 1 APPPATH\Controllers\AdminController.php(922): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 922)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 11:53:20 --> Undefined variable $timesheet
+in APPPATH\Controllers\AdminController.php on line 923.
+ 1 APPPATH\Controllers\AdminController.php(923): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $timesheet', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 923)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:23:53 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\AdminController.php on line 921.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:23:53 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\AdminController.php on line 921.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:38:39 --> Undefined array key "project_name"
+in APPPATH\Controllers\AdminController.php on line 921.
+ 1 APPPATH\Controllers\AdminController.php(921): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 921)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:44:52 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 1049.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:44:53 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 1049.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:45:27 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 1046.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 12:45:28 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 1046.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 15:34:57 --> Undefined array key "project_name"
+in APPPATH\Controllers\AdminController.php on line 894.
+ 1 APPPATH\Controllers\AdminController.php(894): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_name"', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 894)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-28 16:16:53 --> Undefined variable $hours
+in APPPATH\Controllers\AdminController.php on line 879.
+ 1 APPPATH\Controllers\AdminController.php(879): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hours', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\AdminController.php', 879)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,1921 @@
+ERROR - 2023-06-27 16:32:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(720): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 16:32:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(720): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 17:02:16 --> Call to a member function get() on null
+in APPPATH\Controllers\AdminController.php on line 708.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:04:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(721): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:04:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(721): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:07:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:07:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:08:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:08:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:10:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:10:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:11:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:11:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:11:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:11:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                )
+                ORDER BY row_number
+            ')
+ 4 APPPATH\Controllers\AdminController.php(725): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                ) AS subquery
+                UNION
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                FROM employee
+                WHERE emp_id NOT IN (
+                    SELECT DISTINCT emp_id
+                    FROM timesheet_master
+                    WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                )
+                ORDER BY row_number
+            ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:13:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:13:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:14:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:14:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:16:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:16:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:17:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:17:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:17:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:17:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:19:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:19:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:19:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:19:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:21:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:21:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:22:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:22:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:23:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:23:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 17:23:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('\r\n             ...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('\r\n             ...', Array)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 17:23:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_i...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = \'2023-06-26\'
+                        )
+                        ORDER BY row_number
+                        ')
+ 4 APPPATH\Controllers\AdminController.php(726): CodeIgniter\Database\BaseConnection->query('
+                SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, COALESCE(total_hours, 0) as total_hours
+                FROM (
+                    SELECT e.emp_id, e.name, ROUND(SUM(tm.hours) AS total_hours
+                    FROM employee e
+                    LEFT JOIN timesheet_master tm ON e.emp_id = tm.emp_id
+                    WHERE DATE_FORMAT(tm.report_time, \'%Y-%m-%d\') = ?
+                    GROUP BY e.emp_id, e.name
+                    ) AS subquery
+                    UNION
+                    SELECT (@row_number:=@row_number + 1) as row_number, emp_id, name, 0 as total_hours
+                    FROM employee
+                    WHERE emp_id NOT IN (
+                        SELECT DISTINCT emp_id
+                        FROM timesheet_master
+                        WHERE DATE_FORMAT(report_time, \'%Y-%m-%d\') = ?
+                        )
+                        ORDER BY row_number
+                        ', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->yesterday_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 13:30:06 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 13:30:06 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 13:31:32 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 13:31:32 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+                FROM employee e
+                INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+                WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+                GROUP BY e.emp_id, e.name, e.email
+                HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 13:32:56 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 13:32:56 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+            FROM employee e
+            INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+            WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+            GROUP BY e.emp_id, e.name, e.email
+            HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+            FROM employee e
+            INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+            WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+            GROUP BY e.emp_id, e.name, e.email
+            HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+            FROM employee e
+            INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+            WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+            GROUP BY e.emp_id, e.name, e.email
+            HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+            FROM employee e
+            INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+            WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+            GROUP BY e.emp_id, e.name, e.email
+            HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 13:34:56 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 13:34:56 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE t.date >= \'2023-06-26\' AND t.date <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 13:38:26 --> mysqli_sql_exception: Unknown column 't.date' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id...')
+#3 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id...')
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-27 13:38:26 --> Unknown column 't.date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-26\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-26\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-26\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 4 APPPATH\Controllers\AdminController.php(878): CodeIgniter\Database\BaseConnection->query('SELECT e.emp_id, e.name, e.email, SUM(t.hours) AS total_hours
+    FROM employee e
+    INNER JOIN timesheet_master t ON e.emp_id = t.emp_id
+    WHERE DATE_FORMAT(t.date, \'%Y-%m-%d\') >= \'2023-06-26\' AND DATE_FORMAT(t.date, \'%Y-%m-%d\') <= \'2023-06-27\'
+    GROUP BY e.emp_id, e.name, e.email
+    HAVING total_hours < 8')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->below_hours()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()

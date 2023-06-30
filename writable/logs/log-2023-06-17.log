@@ -1,0 +1,1613 @@
+CRITICAL - 2023-06-17 11:36:18 --> syntax error, unexpected token "<"
+in APPPATH\Views\emptimesheet.php on line 183.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 11:36:19 --> syntax error, unexpected token "<"
+in APPPATH\Views\emptimesheet.php on line 183.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 11:42:55 --> htmlspecialchars_decode(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\emptimesheet.php on line 181.
+ 1 APPPATH\Views\emptimesheet.php(181): htmlspecialchars_decode([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 11:44:36 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\emptimesheet.php on line 181.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 3 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 12:09:23 --> Undefined variable $limitedContent
+in APPPATH\Views\emptimesheet.php on line 170.
+ 1 APPPATH\Views\emptimesheet.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $limitedContent', 'APPPATH\\Views\\emptimesheet.php', 170)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\emptimesheet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 5 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 12:28:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\emptimesheet.php on line 170.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('emptimesheet', [], true)
+ 4 APPPATH\Controllers\Timesheet.php(156): view('emptimesheet', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Timesheet->my_timesheets()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Timesheet))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:10:55 --> Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 741.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(698): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->where(Object(Closure))
+ 3 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:11:21 --> Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 741.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(698): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->where(Object(Closure))
+ 3 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:12:05 --> Illegal offset type
+in SYSTEMPATH\Database\BaseBuilder.php on line 741.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(698): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', Object(Closure), null, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->where(Object(Closure))
+ 3 APPPATH\Controllers\AdminController.php(376): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-15', '0', '102')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:20:20 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:20:20 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(date) >= :DATE(date):
+AND DATE(date) <= :DATE(date).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:20:50 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:20:50 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(report_time) >= :DATE(report_time):
+AND DATE(report_time) <= :DATE(report_time).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:20:52 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:20:52 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(report_time) >= :DATE(report_time):
+AND DATE(report_time) <= :DATE(report_time).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-09', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:20:56 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:20:56 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE DATE(report_time) >= :DATE(report_time):
+AND DATE(report_time) <= :DATE(report_time).1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:20:57 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:20:57 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE DATE(report_time) >= :DATE(report_time):
+AND DATE(report_time) <= :DATE(report_time).1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:21:19 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:21:19 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE date(report_time) >= :date(report_time):
+AND date(report_time) <= :date(report_time).1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:21:37 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:21:37 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:21:38 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:21:38 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:21:38 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:21:38 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:21:38 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:21:38 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-19', '0', '102')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:23:17 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:23:17 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:23:53 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:23:53 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:24:02 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:24:02 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:25:11 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:25:11 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:33:12 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:33:12 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `report_time` >= :report_time:
+AND `report_time` <= :report_time.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:35:47 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:35:47 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE date(`report_time`) >= :date(`report_time`):
+AND date(`report_time`) <= :date(`report_time`).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:35:48 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:35:48 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE date(`report_time`) >= :date(`report_time`):
+AND date(`report_time`) <= :date(`report_time`).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:35:52 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:35:52 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE date(`report_time`) >= :date(`report_time`):
+AND date(`report_time`) <= :date(`report_time`).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:36:56 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:36:56 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE date(`report_time`) >= :date(`report_time`):
+AND date(`report_time`) <= :date(`report_time`).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(410): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 09:38:54 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 09:38:54 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= :DATE(`report_time`):
+AND DATE(`report_time`) <= :DATE(`report_time`).1:', [...], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(411): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:40:41 --> File not found: "20230617-09_40_41.xlsx"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('20230617-09_40_41.xlsx')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('20230617-09_40_41.xlsx', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('20230617-09_40_41.xlsx')
+ 4 APPPATH\Controllers\AdminController.php(676): CodeIgniter\HTTP\Response->download('20230617-09_40_41.xlsx', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:41:45 --> File not found: "20230617-09_41_45.xlsx"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('20230617-09_41_45.xlsx')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('20230617-09_41_45.xlsx', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('20230617-09_41_45.xlsx')
+ 4 APPPATH\Controllers\AdminController.php(676): CodeIgniter\HTTP\Response->download('20230617-09_41_45.xlsx', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:41:55 --> File not found: "20230617-09_41_55.xlsx"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('20230617-09_41_55.xlsx')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('20230617-09_41_55.xlsx', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('20230617-09_41_55.xlsx')
+ 4 APPPATH\Controllers\AdminController.php(676): CodeIgniter\HTTP\Response->download('20230617-09_41_55.xlsx', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:42:29 --> Undefined property: PhpOffice\PhpSpreadsheet\Writer\Xlsx::$20230617-09_42_29.xlsx
+in APPPATH\Controllers\AdminController.php on line 673.
+ 1 APPPATH\Controllers\AdminController.php(673): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx::$20230617-09_42_29.xlsx', 'APPPATH\\Controllers\\AdminController.php', 673)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:50:18 --> File not found: "20230617-09_50_18.xlsx"
+in SYSTEMPATH\Files\File.php on line 47.
+ 1 SYSTEMPATH\Files\File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('20230617-09_50_18.xlsx')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('20230617-09_50_18.xlsx', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(794): CodeIgniter\HTTP\DownloadResponse->setFilePath('20230617-09_50_18.xlsx')
+ 4 APPPATH\Controllers\AdminController.php(552): CodeIgniter\HTTP\Response->download('20230617-09_50_18.xlsx', null)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:50:50 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\AdminController.php on line 829.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 09:59:32 --> File "app\assets\admin\xlsx_format.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('app\\assets\\admin\\xlsx_format.xlsx')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('app\\assets\\admin\\xlsx_format.xlsx', null)
+ 3 APPPATH\Controllers\AdminController.php(491): PhpOffice\PhpSpreadsheet\IOFactory::load('app\\assets\\admin\\xlsx_format.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->download_csv()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:28:09 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:28:09 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= :DATE(`report_time`):
+AND DATE(`report_time`) <= :DATE(`report_time`).1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:35:57 --> mysqli_sql_exception: Unknown column 'timesheet_master.date' in 'field list' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:35:57 --> Unknown column 'timesheet_master.date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`date`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(`report_time`) >= :DATE(`report_time`):
+AND DATE(`report_time`) <= :DATE(`report_time`).1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 12:47:39 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(358): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 12:50:31 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(358): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 12:50:34 --> Call to undefined method App\Models\TimesheetModel::whereDate
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\AdminController.php(358): CodeIgniter\Model->__call('whereDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:51:58 --> mysqli_sql_exception: Unknown column '1970-01-01' in 'where clause' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:51:58 --> Unknown column '1970-01-01' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `1970-01-01` = \'>=\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `1970-01-01` = \'>=\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `1970-01-01` = \'>=\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE `1970-01-01` = :1970-01-01:
+AND DATE(`report_time`) <= :DATE(`report_time`):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:58:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M, %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:58:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M, %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M, %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M, %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M, %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M, %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M, %D):
+AND DATE(`report_time`) <= :DATE(`report_time`):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:59:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:59:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D):
+AND DATE(`report_time`) <= :DATE(`report_time`):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 12:59:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 12:59:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE(`report_time`) <= '2023-06-16'' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE(`report_time`) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D):
+AND DATE(`report_time`) <= :DATE(`report_time`):', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 13:00:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 13:00:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D):
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D).1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 13:00:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 13:00:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D):
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D).1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 13:00:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 13:00:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%Y %M %D) >= '2023-06-16'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= \'2023-06-16\'
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, %Y %M %D) >= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D):
+AND DATE_FORMAT(timesheet_master.report_time, %Y %M %D) <= :DATE_FORMAT(timesheet_master.report_time, %Y %M %D).1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(392): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 13:06:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' '%Y %M %D') >= '2023-06-11'
+AND DATE(timesheet_master.report_time, '%Y %M %D...' at line 9 in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(398): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-11', '2023-06-16', '0', '0')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 13:06:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' '%Y %M %D') >= '2023-06-11'
+AND DATE(timesheet_master.report_time, '%Y %M %D...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(timesheet_master.report_time, \'%Y %M %D\') >= \'2023-06-11\'
+AND DATE(timesheet_master.report_time, \'%Y %M %D\') <= \'2023-06-16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(timesheet_master.report_time, \'%Y %M %D\') >= \'2023-06-11\'
+AND DATE(timesheet_master.report_time, \'%Y %M %D\') <= \'2023-06-16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(timesheet_master.report_time, \'%Y %M %D\') >= \'2023-06-11\'
+AND DATE(timesheet_master.report_time, \'%Y %M %D\') <= \'2023-06-16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl1`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp1`.`name`, `tt1`.`team_name`, `timesheet_master`.`status`, `emp1`.`emp_id`, `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`
+FROM `timesheet_master`
+JOIN `project_list` as `pl1` ON `pl1`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp1` ON `emp1`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt1` ON `tt1`.`team_id` = `emp1`.`team_id`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+WHERE DATE(timesheet_master.report_time, \'%Y %M %D\') >= :DATE(timesheet_master.report_time, \'%Y %M %D\'):
+AND DATE(timesheet_master.report_time, \'%Y %M %D\') <= :DATE(timesheet_master.report_time, \'%Y %M %D\').1:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(398): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-11', '2023-06-16', '0', '0')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-17 13:11:33 --> Object of class App\Models\TimesheetModel could not be converted to string
+in APPPATH\Controllers\AdminController.php on line 401.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-16', '2023-06-16', '0', '0')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-17 13:55:42 --> mysqli_sql_exception: Not unique table/alias: 't5' in C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timeshe...', 0)
+#1 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timeshe...')
+#2 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timeshe...')
+#3 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timeshe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\timesheet\app\Controllers\AdminController.php(393): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-16', '1', '104')
+#8 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\timesheet\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\timesheet\index.php(75): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-17 13:55:42 --> Not unique table/alias: 't5'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-16\'
+AND `timesheet_master`.`project_id` = \'104\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-16\'
+AND `timesheet_master`.`project_id` = \'104\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= \'2023-06-01\'
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= \'2023-06-16\'
+AND `timesheet_master`.`project_id` = \'104\'
+AND `timesheet_master`.`emp_id` = \'1\'
+ORDER BY `timesheet_master`.`report_time` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `timesheet_master`.`report_time`, `pl2`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp2`.`name`, `tt2`.`team_name`, `timesheet_master`.`status`, `emp2`.`emp_id`, `timesheet_master`.`report_time`, `pl3`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `emp3`.`name`, `tt3`.`team_name`, `timesheet_master`.`status`, `emp3`.`emp_id`, `timesheet_master`.`report_time`, `pl4`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`status`, `timesheet_master`.`hours`, `emp4`.`name`, `tt4`.`team_name`, `emp4`.`emp_id`, `timesheet_master`.`report_time`, `p5`.`project_name`, `timesheet_master`.`module`, `timesheet_master`.`task`, `timesheet_master`.`hours`, `e5`.`name`, `e5`.`emp_id`, `t5`.`team_name`, `timesheet_master`.`status`
+FROM `timesheet_master`
+JOIN `project_list` as `pl2` ON `pl2`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp2` ON `emp2`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt2` ON `tt2`.`team_id` = `emp2`.`team_id`
+JOIN `employee` as `emp3` ON `emp3`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt3` ON `tt3`.`team_id` = `emp3`.`team_id`
+JOIN `project_list` as `pl3` ON `pl3`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` as `emp4` ON `emp4`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` as `tt4` ON `tt4`.`team_id` = `emp4`.`team_id`
+JOIN `project_list` as `pl4` ON `pl4`.`project_id` = `timesheet_master`.`project_id`
+JOIN `project_list` `p5` ON `p5`.`project_id` = `timesheet_master`.`project_id`
+JOIN `employee` `e5` ON `e5`.`emp_id` = `timesheet_master`.`emp_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+JOIN `team_master` `t5` ON `t5`.`team_id` = `e5`.`team_id`
+WHERE DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') >= :DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\'):
+AND DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\') <= :DATE_FORMAT(timesheet_master.report_time, \'%Y-%m-%d\').1:
+AND `timesheet_master`.`project_id` = :timesheet_master.project_id:
+AND `timesheet_master`.`emp_id` = :timesheet_master.emp_id:
+ORDER BY `timesheet_master`.`report_time` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(393): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminController->csv('2023-06-01', '2023-06-16', '1', '104')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(75): CodeIgniter\CodeIgniter->run()
