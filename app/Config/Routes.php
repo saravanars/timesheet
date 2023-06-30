@@ -40,6 +40,7 @@ $routes->match(['get', 'post'], 'loginAuth', 'FormController::loginAuth');
     $routes->get('/user', 'EmpController::index',['filter' => 'auth']);
     $routes->get('user_dashbaord',"EmpController::dashboard",['filter' => 'auth']);
     $routes->get('timesheet','Timesheet::index',['filter' => 'auth']);
+    
     $routes->get('/login', 'FormController::index');
     $routes->get('/logout', 'FormController::logout');
     $routes->get('recover', 'FormController::recover');
@@ -55,12 +56,17 @@ $routes->match(['get', 'post'], 'loginAuth', 'FormController::loginAuth');
     $routes->post('timesheet_edit_err', 'Timesheet::edit',['filter' => 'auth']);
 
  $routes->post('/delete_row', 'Timesheet::delete_row', ['filter' => 'auth']);
+ $routes->post('timesheet/ajaxvalidation', 'Timesheet::ajaxValidation');
+ $routes->post('timesheet/ajaxvalidation_project_id', 'Timesheet::ajaxvalidation_project_id');
+
+//  $routes->post('/timesheet/ajax_validation', 'Timesheet::ajax_validation', ['filter' => 'auth']);
 $routes->get('todaydata/(:any)', 'Timesheet::data/$1',['filter' => 'auth']);
 // $routes->delete('timesheet/delete/(:any)', 'Timesheet::delete/$1');
-$routes->post('accesskey/(:any)', 'Timesheet::checkAccess/$1', ['filter' => 'auth']);
+// $routes->post('accesskey/(:any)', 'Timesheet::checkAccess/$1', ['filter' => 'auth']);
 
+$routes->post('access_key', 'Timesheet::access_key');
 
-
+$routes->post('form_valid', 'Timesheet::form_ajax');
 
     $routes->get('mail','Mail::index');
     $routes->match(['get', 'post'], 'SendMail/sendMail', 'Mail::sendMail');
@@ -75,10 +81,24 @@ $routes->post('accesskey/(:any)', 'Timesheet::checkAccess/$1', ['filter' => 'aut
 
     $routes->get('/back', 'AdminController::index',['filter' => 'admin']);
   $routes->get('employees_dt', 'AdminController::permission_view',['filter' => 'admin']);
-//   $routes->post('action_key', 'AdminController::permission_action',['filter' => 'admin']);
-
-$routes->post('/action_key', 'AdminController::permission_action', ['filter' => 'admin']);
+  $routes->post('/action_key', 'AdminController::permission_action', ['filter' => 'admin']);
 $routes->post('/action_group', 'AdminController::access_key_all', ['filter' => 'admin']);
+
+    $routes->get('add_project', 'AdminController::project_add_page',['filter' => 'admin']);
+    $routes->post('project_adding','AdminController::project_adding', ['filter' => 'admin']);
+    $routes->post('/project_active', 'AdminController::project_active', ['filter' => 'admin']);
+    $routes->post('project_edit', 'AdminController::get_project_data',['filter' => 'admin']);
+    $routes->post('update_project_name', 'AdminController::update_project_name',['filter' => 'admin']);
+    $routes->get('add_employees', 'AdminController::employees_page',['filter' => 'admin']);
+    $routes->post('employees_adding', 'AdminController::employees_adding',['filter' => 'admin']);
+    $routes->get('daily_working_hours', 'AdminController::yesterday_reports');
+
+    $routes->get('below_hours', 'AdminController::below_hours');
+    $routes->post('/employee_active', 'AdminController::employee_active', ['filter' => 'admin']);
+
+
+    $routes->get('employees/edit/(:num)', 'AdminController::edit/$1',['filter' => 'admin']);
+    $routes->post('employees_update/', 'AdminController::update_employees',['filter' => 'admin']);
 // $routes->get('user_reports/exportPDF/(:any)/(:any)/(:num)/(:num)', 'User_reports::exportPDF/$1/$2/$3/$4');
     $routes->post('admin/csv', 'AdminController::csv',['filter' => 'admin']);
     // $routes->match(['get', 'post'], 'admin/filter', 'AdminController::search',);

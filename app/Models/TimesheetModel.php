@@ -6,23 +6,23 @@ use CodeIgniter\Model;
 class TimesheetModel extends Model
 {
     protected $table = 'timesheet_master';
-    protected $allowedFields = ['id', 'emp_id', 'report_time', 'module', 'project_id', 'task', 'status', 'hours', 'date'];
+    protected $allowedFields = ['id', 'emp_id', 'report_time', 'module', 'project_id', 'task', 'status', 'hours', 'updated_date_and_time'];
 
 
 
     public function getTimesheetsWithProjectNames($empid)
     {
      
-        return $this->select('timesheet_master.emp_id, timesheet_master.task, timesheet_master.hours, timesheet_master.date, timesheet_master.report_time, timesheet_master.status, timesheet_master.id,project_list.project_name,tt1.team_name,timesheet_master.module')
+       return $this->select('timesheet_master.id,timesheet_master.emp_id, timesheet_master.task, timesheet_master.hours, timesheet_master.updated_date_and_time, timesheet_master.report_time, timesheet_master.status, timesheet_master.id,project_list.project_name,tt1.team_name,timesheet_master.module')
         ->distinct()
         ->join('employee as emp1', 'emp1.emp_id = timesheet_master.emp_id')
-    ->join('team_master as tt1', 'tt1.team_id = emp1.team_id')
+        ->join('team_master as tt1', 'tt1.team_id = emp1.team_id')
         ->join('project_list', 'project_list.project_id = timesheet_master.project_id')
         ->where('timesheet_master.emp_id', $empid)
-        ->orderBy('timesheet_master.date', 'desc')
+        ->orderBy('timesheet_master.id', 'DESC')
         ->findAll();
     
-    
+    // echo $this->db->getLastQuery();die;
     }
    
 
@@ -30,17 +30,6 @@ class TimesheetModel extends Model
 
 
 
-    // public function getTimesheetsProject()
-    // {
-     
-    //     return $this->select('timesheet_master.emp_id, timesheet_master.task, timesheet_master.hours, timesheet_master.date, timesheet_master.report_time, timesheet_master.status, timesheet_master.id,project_list.project_name')
-    //     ->distinct()
-    //    
-    //     ->orderBy('timesheet_master.date', 'desc')
-    //     ->findAll();
-    
-    
-    // }
 
 
     public function getreport()

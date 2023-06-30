@@ -7,6 +7,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -110,9 +112,26 @@
 
   #btn_view {
     background-color: #337ab7;
+  }
 
+  .beforeday_btn {
+    width: 15% !important;
+    margin: 0;
+    margin-left: 94px;
+    margin-right: -13px;
+  }
+
+  .success_msg {
+    display: none;
+    background-color: #3bbf52;
+    padding: 0px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
   }
 </style>
+
 <body>
   <div id="wrapper">
     <?php include('Common/Admin/navbar.php') ?>
@@ -131,11 +150,11 @@
             <div class="container filter-form">
               <div class="form-group">
                 <label>From Date</label>
-                <input type="date" class="form-control" name="fromdate" id="fromdate" placeholder="From Date" value="">
+                <input type="date" class="form-control date-range-filter" name="fromdate" id="fromdate" placeholder="From Date" value="">
               </div>
               <div class="form-group">
                 <label>To Date</label>
-                <input type="date" class="form-control" id="todate" name="todate" placeholder="To Date" value="">
+                <input type="date" class="form-control date-range-filter" id="todate" name="todate" placeholder="To Date" value="">
               </div>
               <div class="form-group">
                 <button type="submit" class="form-control" id="search">Search</button>
@@ -161,16 +180,32 @@
                 </select>
               </div>
               <div class="form-group">
-                <button type="submit" class="form-control" id="pdf">Export PDF</button>
+                <button type="submit" class="form-control " id="pdf">Export PDF</button>
               </div>
               <div class="form-group">
                 <button type="submit" class="form-control" id="csv">Export CSV</button>
               </div>
             </div>
+
+            <div class="form-group">
+              <button type="submit" class="form-control beforeday_btn" id="yesterday">
+                <i class="fa fa-envelope"></i> Yesterday working hours reports
+              </button>
+              <p class="success_msg">Mail sented successfully.</p>
+            </div>
+
+
+
+
+            <div class="form-group">
+              <button type="submit" class="form-control beforeday_btn" id="below_working_hours">
+                <i class="fa fa-envelope"></i> below working hours
+              </button>
+
           </form>
         </div>
 
-        <div class="row">
+        <div class="container">
           <div class="col-lg-12 col-md-12 col-xs-12 js-content">
             <div class="docs-table">
               <table id="documentsTable" class="table table-striped table-bordered">
@@ -188,18 +223,17 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <?php foreach ($single_project as $project) :    ?>
+                  <?php foreach ($employees_report_details as $employees_reports) :    ?>
 
-                    <tr>
-                  
-                      <td><?php echo $project['date'] ; ?></td>
-                      <td><?php echo ucfirst($project['name']); ?></td>
-                      <td><?php echo $project['project_name']; ?></td>
-                      <td><?php echo $project['team_name']; ?></td>
-                      <td><?= ucfirst($project['module']) ?></td>
-                      <td class="task"><?= ucfirst(htmlspecialchars_decode($project['task'])) ?></td>
-                      <td><?= $project['hours'] ?></td>
-                      <td><?= ucfirst($project['status']) ?></td>
+                    <tr> <?php $date = date('d-m-Y', strtotime($employees_reports['report_time'])); ?>
+                      <td><?php echo $date;   ?></td>
+                      <td><?php echo ucfirst($employees_reports['name']); ?></td>
+                      <td><?php echo $employees_reports['project_name']; ?></td>
+                      <td><?php echo $employees_reports['team_name']; ?></td>
+                      <td><?= ucfirst($employees_reports['module']) ?></td>
+                      <td class="task"><?= ucfirst(htmlspecialchars_decode($employees_reports['task'])) ?></td>
+                      <td><?= $employees_reports['hours'] ?></td>
+                      <td><?= ucfirst($employees_reports['status']) ?></td>
                       </td>
                     </tr>
                   <?php endforeach; ?>
@@ -215,14 +249,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+
   <script>
     var table;
+
     $(document).ready(function() {
       table = $('#documentsTable').DataTable({
         dom: 'Bfrtip',
         order: [
           [0, 'desc']
-        ],
+        ]
       });
 
       $('#emps').on('change', function() {
@@ -237,35 +275,23 @@
       });
 
       $('#project_name').on('change', function() {
-      
         var terms = $('#project_name option:selected').text();
-
         console.log(terms);
 
         if (terms == 'Select Project Name') {
-
           location.reload();
-
         } else {
-
           table.column(2).search(terms).draw();
-
         }
       });
 
-
-
-
-
       $('#searchForm').on('submit', function(event) {
         event.preventDefault();
-
         var fromDate = $('#fromdate').val();
         var toDate = $('#todate').val();
 
         if (validateDates(fromDate, toDate)) {
-          // alert('thilip');
-          performSearch(fromDate, toDate);
+          table.draw();
         } else {
           event.preventDefault();
         }
@@ -276,41 +302,30 @@
         var toDateObj = new Date(toDate);
 
         if (fromDateObj > toDateObj) {
-          // Show an error message or perform any other validation logic
           alert('From date must be before the To date.');
           return false;
         } else {
-          // alert('fgh'); 
           return true;
         }
-
-
       }
 
-      function performSearch(fromDate, toDate) {
-        $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
-          var min = new Date(fromDate).getTime();
-          var max = new Date(toDate).getTime();
-          var date = new Date(data[0]).getTime();
+      $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+        var min = $('#fromdate').val();
+        var max = $('#todate').val();
+        var createdAt = data[0] || '';
 
-          if ((isNaN(min) && isNaN(max)) ||
-            (isNaN(min) && date <= max) ||
-            (min <= date && isNaN(max)) ||
-            (min <= date && date <= max)) {
-            return true;
-          }
+        if ((min == '' || max == '') || (moment(createdAt).isSameOrAfter(min) && moment(createdAt).isSameOrBefore(max))) {
+          return true;
+        }
+        return false;
+      });
 
-          return false;
-        });
-
+      $('.date-range-filter').change(function() {
         table.draw();
+      });
 
-        $.fn.dataTable.ext.search.pop();
 
-        // Set the selected dates in the input fields
-        $('#fromdate').val(fromDate);
-        $('#todate').val(toDate);
-      }
+
 
 
 
@@ -327,7 +342,7 @@
           var url_ = url + 'admin/filter/' + fromDate + '/' + toDate + '/' + Employee + '/' + project_name;
           window.open(url_, "_blank");
         } else {
-        
+
         }
       });
 
@@ -351,24 +366,94 @@
 
 
 
+
+      $('#yesterday').on('click', function() {
+        var yesterday = 1;
+
+
+        $.ajax({
+          url: "<?php echo base_url("daily_working_hours"); ?>",
+          method: 'GET',
+          data: {
+            yesterday: yesterday
+          },
+          success: function(response) {
+            var response = {
+              'status': 'success',
+              'message': 'Project inserted successfully.'
+            };
+
+            var message = response.message;
+            var responseElement = $("<div>").text(message);
+            $("#page-wrapper").append(responseElement);
+
+            // Add class based on response status
+
+
+            $("body").append(responseElement);
+
+            setTimeout(function() {
+              $('.success_msg').fadeOut();
+            }, 1000);
+
+          },
+          error: function(xhr, status, error) {
+            // Handle AJAX error if needed
+          }
+        });
+
+
+
+
+
+      })
+
+    })
+
+
+    $('#below_working_hours').on('click', function() {
+      var yesterday = 2;
+
+
+      $.ajax({
+        url: "<?php echo base_url("below_hours"); ?>",
+        method: 'GET',
+        data: {
+          yesterday: yesterday
+        },
+        success: function(response) {
+          var response = {
+            'status': 'success',
+            'message': 'Project inserted successfully.'
+          };
+
+          var message = response.message;
+          var responseElement = $("<div>").text(message);
+          $("#page-wrapper").append(responseElement);
+
+          // Add class based on response status
+
+
+          $("body").append(responseElement);
+
+          setTimeout(function() {
+            $('.success_msg').fadeOut();
+          }, 1000);
+
+        },
+        error: function(xhr, status, error) {
+          // Handle AJAX error if needed
+        }
+
+
+
+      });
+
+
     });
   </script>
 </body>
-<script>
 
-</script>
-
-
-</script>
-<script>
-  $(document).ready(function() {
-
-
-
-
-
-  });
-</script>
 <script>
   function viewTodayData(date, empId, Id) {
     var today = date;

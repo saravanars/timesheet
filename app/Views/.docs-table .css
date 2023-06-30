@@ -1,0 +1,7 @@
+.docs-table .dataTables_wrapper .dataTables_filter {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+  }

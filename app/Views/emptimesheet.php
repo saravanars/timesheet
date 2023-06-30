@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -9,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <style>
-
-
-
         /* Styles for the table */
         body {
             margin: 0;
@@ -109,55 +105,56 @@
                 margin-bottom: 5px;
                 display: block;
             }
+
+            #more {
+                display: none;
+            }
+
+
+
+            .error-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffdddd;
+            color: #ff0000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .error-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .error-list li {
+            margin-bottom: 5px;
+        }
         }
     </style>
 </head>
 
 <body>
     <header>
-    <?= $navbar ?>
+    <?php if (session()->has('errors')) : ?>
+            <div class="error-box">
+                <ul class="error-list">
+                    <?php foreach (session('errors') as $error) : ?>
+                        <li><?php echo $error; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endif; ?>
+
+        <?= $navbar ?>
         <div class="d">
 
-
-
-
-
-        <?php $report_date = date("Y-m-d");?>
-     
-          <?php 
-          if($single_project[0]['date']== ($report_date))
-          {
-
-            ?>
-                       <button class="btn btn-primary table__btn">
-                Already  Added Timesheet
-            </button>
-
-        <?php }
-          else
-          {
-           ?>
-                     <button class="btn btn-primary table__btn" onclick="redirectToTimesheet()">
+            <button class="btn btn-primary table__btn" onclick="redirectToTimesheet()">
                 Add timesheet
             </button>
 
-
-
-         <?php }
-         ?>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <button class="btn btn-primary table__btn" onclick="redirectToTimesheet()">
+           <!-- <button class="btn btn-primary table__btn" onclick="redirectToTimesheet()">
                 Add timesheet
             </button> -->
         </div>
@@ -176,37 +173,86 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($single_project as $project) : ?>
+                <?php $taskId = 1;
+                foreach ($myemployee as  $employee_timesheets) :
+                ?>
                     <tr>
-                        <?php  $formatdate = date("d-m-Y", strtotime($project['date'] )); ?>
-                        <td class="projectdate"><?= $formatdate    ?></td>
-                        <td><?= $project['project_name'] ?></td>
-                        <td><?= ucfirst($project['module']) ?></td>
-                        <td class="task"><?= ucfirst(htmlspecialchars_decode($project['task'])) ?></td>
-                        <td><?= $project['hours'] ?></td>
-                        <td><?= ucfirst($project['status']) ?></td>
-                        <td>              
-                        <?php 
-if ($project['date'] == $today_date || $company['access_key'] == 1) {
-    echo '<button class="btn btn-primary table__btn" onclick="editTimesheet(\'' . $project['date'] . '\')">
-        <i class="far fa-edit"></i>
-    </button>';
-    
-} else {
-    echo '<button class="btn btn-primary table__btn" style="display: none;"></button>';
-}
 
-?>
-<?php
-if ($project['date'] == $today_date || $company['access_key'] == 1) {
-    echo '<button class="btn btn-primary table__btn" id="deleteButton" onclick="redirectToDelete(\'' . $project['id'] . '\')"> 
-        <i class="far fa-trash-alt"></i>
-    </button>';
-} else {
-    echo '<button class="btn btn-primary table__btn" style="display: none;"></button>';
-}
-?>
-                         
+                        <?php $date_formats = date('d-m-Y', strtotime($employee_timesheets['report_time']));; ?>
+                        <td class="projectdate"><?= $date_formats    ?></td>
+                        <td><?= $employee_timesheets['project_name'] ?></td>
+                        <td><?= ucfirst($employee_timesheets['module']) ?></td>
+                        <td class="task">
+                            <?php
+                            $task = $employee_timesheets['task'];
+                            $tasks = htmlspecialchars_decode($task, ENT_NOQUOTES);
+                            $tasksWithoutTags = strip_tags($tasks);         // $tasks_details = preg_split('/\s+/', $tasks);
+                            $decodedTasks = html_entity_decode($tasksWithoutTags);
+                            $wordCount = str_word_count($decodedTasks);
+
+                            if ($wordCount > 10) {
+                                $shortText = implode(' ', array_slice(str_word_count($decodedTasks, 1), 0, 10));
+                                $remainingText = implode(' ', array_slice(str_word_count($decodedTasks, 1), 10));
+
+                                echo $shortText;
+                                echo '<span id="dots_' . $taskId . '">...</span>';
+                                echo '<span id="more_' . $taskId . '" style="display:none;">' . $remainingText . '</span>';
+                                echo '<button onclick="myFunction(' . $taskId . ')" id="myBtn_' . $taskId . '">Read more</button>';
+                            } else {
+                                echo "<span> $tasks </span>";
+                            }
+
+                            $taskId++;
+                            ?>
+                        </td>
+
+                        <script>
+                            var taskId = <?php echo $taskId; ?>;
+
+                            function myFunction(taskId) {
+                                var dots = document.getElementById("dots_" + taskId);
+                                var moreText = document.getElementById("more_" + taskId);
+                                var btnText = document.getElementById("myBtn_" + taskId);
+
+                                if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more";
+                                    moreText.style.display = "none";
+                                } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less";
+                                    moreText.style.display = "inline";
+                                }
+                            }
+                        </script>
+                        </td>
+
+
+
+
+                        <td><?= $employee_timesheets['hours'] ?></td>
+                        <td><?= ucfirst($employee_timesheets['status']) ?></td>
+                        <td>
+                            <?php
+                            if (date('Y-m-d', strtotime($employee_timesheets['report_time'])) == $today_date || $company['access_key'] == 1) {
+                                echo '<button class="btn btn-primary table__btn" onclick="editTimesheet(\'' . $employee_timesheets['id'] . '\')">
+                                 <i class="far fa-edit"></i>
+                                   </button>';
+                            } else {
+                                echo '<button class="btn btn-primary table__btn" style="display: none;"></button>';
+                            }
+
+                            ?>
+                            <?php
+                            if (date('Y-m-d', strtotime($employee_timesheets['report_time'])) == $today_date || $company['access_key'] == 1) {
+                                echo '<button class="btn btn-primary table__btn" id="deleteButton" onclick="redirectToDelete(\'' .  $employee_timesheets['id'] . '\')"> 
+                              <i class="far fa-trash-alt"></i>
+                                  </button>';
+                            } else {
+                                echo '<button class="btn btn-primary table__btn" style="display: none;"></button>';
+                            }
+                            ?>
+
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -220,16 +266,16 @@ if ($project['date'] == $today_date || $company['access_key'] == 1) {
     <script>
         $(document).ready(function() {
             $('#emp').DataTable({
-                order: 
-          [0, 'desc'],
                 "paging": true, // Enable pagination
-                "searching": true // Enable search
+                "searching": true,
+                "order": false // Enable search
             });
         });
 
-        function editTimesheet(date) {
-            var today = new Date(date);
-            var url = "timesheet/edit/" + today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+        function editTimesheet(id) {
+            var id = (id);
+            // var edit = 
+            var url = "timesheet/edit/" + id;
             window.location.href = url;
         }
 
@@ -242,30 +288,6 @@ if ($project['date'] == $today_date || $company['access_key'] == 1) {
         }
 
 
-//         function redirectToDelete(id) {
-//     // Show a confirmation dialog to confirm the deletion
-//     var deleteConfirmed = confirm("Are you sure you want to delete this timesheet entry?");
-
-//     if (deleteConfirmed) {
-//         // Send an AJAX request to the server to delete the timesheet entry
-//         $.ajax({
-//             url: "timesheet/delete/" + id,
-//             type: "GET",
-//             success: function(response) {
-//                 // Handle the success response here
-//                 // For example, you can show a success message or reload the timesheet table
-//                 console.log("Timesheet entry deleted successfully");
-//                 // Reload the page or update the timesheet table
-//                 location.reload();
-//             },
-//             error: function(xhr, status, error) {
-//                 // Handle the error response here
-//                 console.log("Error deleting timesheet entry: " + error);
-//                 // Display an error message to the user if needed
-//             }
-//         });
-//     }
-// }
 
         function redirectToTimesheet() {
             window.location.href = "<?= base_url('timesheet') ?>";
@@ -274,10 +296,3 @@ if ($project['date'] == $today_date || $company['access_key'] == 1) {
 </body>
 
 </html>
-
-
-
-
-
-
-

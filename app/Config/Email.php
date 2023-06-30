@@ -22,7 +22,30 @@ class Email extends BaseConfig
 	 * The "user agent"
 	 *
 	 * @var string
+	 * 
+	 * 
 	 */
+
+
+	 public $ccRecipients;
+
+	 // Rest of the configuration...
+
+	 public function __construct()
+	 {
+			 parent::__construct();
+
+			 // Set the recipients and ccRecipients variables
+			 $this->recipients = 'saravanakumar_r@itflexsolutions.com, ';
+			 $this->ccRecipients = 'ramaraj@itflexsolutions.com, mohammedizzathtullah@itflexsolutions.com';
+	 }
+
+
+
+
+
+
+
 	public $userAgent = 'CodeIgniter';
 	/**
 	 * The mail sending protocol: mail, sendmail, smtp
@@ -147,4 +170,7 @@ class Email extends BaseConfig
 	 * @var boolean
 	 */
 	public $DSN = false;
+
+
+
 }

@@ -59,6 +59,10 @@ class FormController extends BaseController
                 $session->set($ses_data);
                 // print_r($ses_data);
                 // die;
+                if($data['status'] == 0){
+                    $session->setFlashdata('msg', 'Invalid user .');
+                    return redirect()->to('/login');
+                }
 
                 if ($data['first_login'] == 1) {
 
@@ -221,20 +225,20 @@ class FormController extends BaseController
 
         $session = session();
         $email = $session->get('email');
-        $reset_token = $session->get('otp');
+        // $reset_token = $session->get('otp');
 
-        if ($token != $reset_token) {
+        // if ($token != $reset_token) {
 
-            return view('forgetpassword', ['error' => 'Invalid password reset token']);
-        }
+        //     return view('forgetpassword', ['error' => 'Invalid password reset token']);
+        // }
         // $session->set('reset_email', $email);
-        $CompanyModel = new CompanyModel();
+  
 
         $CompanyModel = new CompanyModel();
         $this->CompanyModel = $CompanyModel->where('email', $email)->first();
         $link1 = $token;
         $data = $CompanyModel->where('otp', $link1)->first();
-        // $status = 1;
+
         if (!$token) {
             $session->setFlashdata('msg', 'Reset token not found. Please try again');
             return redirect()->to('/login');

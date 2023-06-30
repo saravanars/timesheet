@@ -1,6 +1,7 @@
 <style>
   * {
     font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
   }
 
 
@@ -53,7 +54,7 @@
   }
 
   button {
-    font-family: monospace;
+    
     background-color: #f3f7fe;
     color: #3b82f6;
     border: none;
@@ -81,7 +82,7 @@
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
-    border-radius: 50px;
+    /* border-radius: 50px; */
   }
 
   .logo {
@@ -114,8 +115,8 @@
   }
 
   #btn_name {
-    border-radius: 50px;
-    font-size: 77%;
+    /* border-radius: 50px; */
+    font-size: 85%;
     color: #fff;
     background-color: #337ab7;
 
@@ -135,7 +136,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <header>
   <nav class="navbar navbar-inverse navbar-fixed-top px-5" role="navigation">
-    <img class="logo" src="https://www.itflexsolutions.com/wp-content/uploads/2020/01/New-Project-3.png" alt="Logo">
+    <a href="<?php echo base_url();?>/admin"><img class="logo" src="https://www.itflexsolutions.com/wp-content/uploads/2020/01/New-Project-3.png" alt="Logo"></a>
   
 
     <div class="nav-last">
@@ -147,7 +148,8 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" onclick="access()" href="#">Accesskey</a></li>
           
-          <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          <li><a class="dropdown-item"     onclick="add_project()"href="#">Add Project </a></li>
+          <li><a class="dropdown-item"   onclick="add_employees()" href="#">Add Employees</a></li>
         </ul>
       </div>
     </div>
@@ -195,5 +197,13 @@ window.location.href = "<?= base_url('/logout') ?>";
 function access(){
 
 window.location.href = "<?= base_url('employees_dt') ?>";
+}
+function  add_employees(){
+  window.location.href = '<?=base_url("add_employees")?>';
+}
+
+
+function  add_project(){
+  window.location.href = '<?=base_url("add_project")?>';
 }
 </script>
